@@ -31,3 +31,53 @@ Cosas para recordar
 * Todo texto escrito dentro de un símbolo debe ser legible, conciso y no demasiado extenso.
 * Todos los símbolos pueden tener más de una entrada a la misma línea.
 * Los símbolos tienen una salida única, salvo los símbolos de decisión, que dividen su flujo.
+
+## Visual Studio 
+
+![](http://i.imgur.com/UprlL46.png)
+
+La sección azul es la sección donde podrás abrir proyectos, guardar todos los ficheros, compilar y ejecutar.
+Algunos comandos rápidos:
+
+CTRL + S - Guardar elementos
+F5 - Compilar y ejecutar
+F6 - Compilar sin ejecutar, para comprobar si todo va bien sin necesidad de ejecutar
+
+La sección amarilla es donde se encuentra nuestro código, con el contador de líneas activado (aunque se puede desactivar).
+
+La sección verde es el output de la compilación, donde marcará si la ejecucicón ha tenido éxito o no. También está la pestaña de lista de errores, que te marcará la línea donde se encuentran los errores en tu código. Visual Studio detecta los errores antes de compilar, las incoherencias o el código no accesible.
+
+La sección roja es el proyecto. Tu programa será un proyecto, también llamada Solución. Ahí existen los ficheros de configuración de Visual Studio para el proyecto, los ficheros CS en C#, carpetas para recursos gráficos o de sonido… y es ahí donde navegarás para encontrar todo tu proyecto. Desde clic derecho en la Solución con la que trabajas, podrás añadir ficheros existentes, nuevos ficheros CS… y lo que se te ocurra. Se recomienda, ya que estamos aquí, tener un fichero CS por cada Clase que vayas creando.
+
+La sección rosa, dentro de la roja, es pequeña pero no menos importante a la hora de trabajar con Visual Studio. Te ayudará a anclar la pestaña abierta aunque salgas de la zona, para seguir programando. Si la desanclas, se replegará para abrir más espacio al editor de código.
+
+Adapta el IDE a tu gusto para trabajar más cómodamente.
+
+## Tu primer proyecto en Visual Studio
+
+![](http://i.imgur.com/L70DwU9.gif)
+
+Cuando creas tu primer proyecto, es lo primero que encontrarás. Tenemos un proyecto de consola con el que vamos a empezar a jugar.
+
+Tenemos varias secciones con las que operar.
+
+En naranja, tenemos varias líneas que no reconoceremos al inicio pero que son esenciales. Cada instrucción de using y los diferentes elementos separados por puntos son namespaces o espacios de nombre. En resumidas cuentas, son bibliotecas que nos darán acceso a las diferentes Clases. Si te falta una determinada biblioteca, no podrás usar sus Clases.
+
+En la sección verde tenemos una declaración de namespace propio, que podemos (y es recomendable) modificar. Para modificar un nombre de variable, Clase o espacio de nombre puedes usar CTRL+R+R sobre el nombre que quieras cambiar y escribir el nuevo nombre. Si nos llevamos este código a otro programa, podemos invocar nuestro código declarando:
+
+```cs
+using miPropioNamespace;
+```
+
+En la sección azul, tenemos una Clase ya declarada llamada Program. Dentro de Program estará nuestro primer código. Podemos y se aconseja cambiar ese nombre, es el estándar y da mala imagen usar los nombres por defecto que te da el IDE.  Para modificar un nombre de variable, Clase o espacio de nombre puedes usar CTRL+R+R sobre el nombre que quieras cambiar y escribir el nuevo nombre.
+
+Y en la sección púrpura, tenemos el Main. Este es un método estático (static) que no devuelve nada (void), que se llama Main (Main) y recibe como parámetros un array de string llamado args (string[] args)
+Por ahora no vamos a operar con ese array pero vamos a dejarlo tal cual.
+
+Por lo pronto, es importante saber qué es estático y que no devuelve nada (void), por lo que tal y cual está el código, compilará. (Si devolviera otro dato, como un entero, podríamos especificar un “return 0;”, pero no es el caso).
+El Main no necesita ser renombrado ni modificarse en los parámetros que recibe (por ahora).
+
+Y es en Main donde se escribirá el código que vamos a ejecutar en inicio.
+
+¿Cómo empezar? Con tu amiga y vecina la Clase Console.
+
