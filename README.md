@@ -12,6 +12,7 @@ Curso de C# entre amigos
 * [Obtener un entero](getInt.md)
 * [Sobrecarga de métodos](sobrecarga.md)
 * [Clase Random](random.md)
+* [Constructores](constructor.md)
 * [Documentación integrada](doc.md)
 * [Comentarios](comentarios.md)
 * [Clase Math](math.md)
