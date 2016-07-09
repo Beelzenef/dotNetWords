@@ -20,12 +20,12 @@ Curso de C# entre amigos
 * [Conversión de valores](conversion.md)
 * [Formateando strings](formatostrings.md)
 * [Programación modular](progmodular.md)
-* [DateTime]()
-* [TimeSpan]()
-* [Clase String]()
-* [Clase Enum]()
-* [Clase Array]()
-* [Clase Stringbuilder]()
+* [DateTime](datetime.md)
+* [TimeSpan](timespan.md)
+* [Clase String](string.md)
+* [Clase Enum](enum.md)
+* [Clase Array](array.md)
+* [Clase Stringbuilder](stringbuilder.md)
 
 **Elena Guzman - BeelCode**
 
