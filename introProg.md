@@ -104,3 +104,94 @@ Escribir “No eres mayor de edad”
 Al final, en ordinogramas bien te puede recordar a [algo así](http://1.bp.blogspot.com/-1lcuJh_tH88/VTu6R9u2oaI/AAAAAAAAABk/OS5w0W6mUZY/s1600/Caracter%C3%ADsticas-del-Ejemplo-de-diagrama-de-flujo.jpg), muy recurrentes en el humor.
 
 Muy pronto, ¡más y mejor!
+
+Y así, con estructuras más complejas, donde por ejemplo, juegan más condicionales. Estos bloques son llamados SWITCHES o bloques CASO (por ser “en caso de... “), y te ofrecen alternativas para caminos varios.
+
+```cs
+Programa: ElegirOpcion
+Recursos:
+	opcion
+Algortimo:
+Leer opcion
+Caso (opcion)
+	caso 1:
+		Escribir “Has elegido opcion 1“
+caso 2:
+		Escribir “Has elegido opcion 2“ 
+caso 3:
+		Escribir “Has elegido opcion 3“
+Fin CASO
+Fin ElegirOpcion
+```
+
+Y representado en [ordinogramas](http://image.slidesharecdn.com/diagramasdeflujo2-140108193258-phpapp01/95/diagramas-de-flujo-estructuras-de-control-for-while-do-whille-y-switch-case-16-638.jpg?cb=1390379460)...
+
+## Bucles
+
+Y entramos en los bucles. Los bucles son instrucciones que se repiten hasta que algo ocurre. Lo normal es que eso que ocurra es que una condicion se rompa. Por ejemplo, podemos programar que se ejecuten unas instrucciones tres veces. Cuando se ejecute tres veces, el bucle se rompe. Esas tres veces de ejecución es la condición rota.
+
+De una forma similar a la programación podemos decir: mientras que no hayas dado tres vueltas, ejecuta este código.
+
+Si no hay ruptura del bucle, si no hay una condición de salida del bucle, estamos frente a un bucle infinito. Y estos bucles son, salvo excepciones, indeseables. Se rompen cerrando el programa, y es el usuario el que decide cuando cerrar el programa, no necesiaramente porque lo necesite ante una situación no controlada.
+
+Existen tres bucles principales, comunes a la programación, aunque en el futuro puedes encontrar otros que se irán conociendo cuando sea oportuno.
+
+### Bucle While
+
+El bucle WHILE o MIENTRAS se ejecuta mientras una condición sea cierta.
+
+```cs
+...
+MIENTRAS (suspenso)
+	Estudiar
+Fin MIENTRAS
+...
+```
+
+Mientras estoy suspenso, tengo que estudiar. Cuando dejes de estar suspenso, dejarás de estudiar para disfrutar de tus vacaciones.
+
+Y representado en [ordinogramas](http://image.slidesharecdn.com/diagramasdeflujo-090805231936-phpapp01/95/diagramas-de-flujo-15-728.jpg?cb=1249514389)...
+
+### Bucle DOWHILE
+
+El bucle HACER o DOWHILE es un bucle inverso al WHILE o MIENTRAS.
+
+```cs
+...
+HACER
+	Estudiar
+MIENTRAS (suspenso)
+Fin HACER
+...
+```
+
+¿Por qué es inverso? Habrá ocasiones, dependiendo de lo que necesites programar, en que necesitarás ejecutar un código antes que evaluar esa condición que mantiene al bucle vivo.
+
+Así que, primero estudias, y después compruebas si sigues suspenso. Pero lo primero es estudiar. Cuando dejes de estar suspenso, dejarás de estudiar para disfrutar de tus vacaciones.
+
+Y representado en [ordinogramas](http://image.slidesharecdn.com/diagramasdeflujo-090805231936-phpapp01/95/diagramas-de-flujo-15-728.jpg?cb=1249514389)...
+
+### Bucle FOR
+
+El bucle FOR o PARA es más complejo. Consta de tres partes que te ayudarán a que el código dentro del bucle se ejecute y salga cuando se cumpla una condición.
+Está pensado para un número de repeticiones o iteraciones determinadas.
+
+```cs
+...
+PARA:
+	numeroVeces = 0
+	Si numeroVeces < 10
+	numeroVeces se incrementa
+estudiar
+Fin PARA
+...
+```
+
+¿Como funciona, después de haber visto este pseudocódigo? Lo primero es ver que tenemos un número de veces, que está puesto a 0. Esto es un contador, nuestro contador de veces que se ejecuta el código dentro del bucle.
+
+Este bucle se ejecutará siempre y cuando el número de veces que se ha ejecutado sea menor que 10. ¿Cómo lo sabemos? Porque a cada vez que se ejecuta el bucle, la variable numeroVeces se incrementa en uno.
+
+Y esos son, en esencia, las tres líneas que definen el funcionamiento de un bucle PARA o FOR. Determina un contador a cero, establece cuantas veces se va a ejecutar y cambia ese contador para un correcto funcionamiento.
+Al final, el buen estudiante estudiará diez veces al día. Que locura, ¿no?
+
+Y representado en [ordinogramas](http://image.slidesharecdn.com/diagramasdeflujo-090805231936-phpapp01/95/diagramas-de-flujo-16-728.jpg?cb=1249514389)...
