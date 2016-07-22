@@ -195,3 +195,92 @@ Y esos son, en esencia, las tres líneas que definen el funcionamiento de un buc
 Al final, el buen estudiante estudiará diez veces al día. Que locura, ¿no?
 
 Y representado en [ordinogramas](http://image.slidesharecdn.com/diagramasdeflujo-090805231936-phpapp01/95/diagramas-de-flujo-16-728.jpg?cb=1249514389)...
+
+## Tipos de datos
+
+No todos los datos con los que trabajaremos son iguales, aunque hasta ahora no hayamos hecho diferenciación. A veces podemos trabajar con texto. A veces, con números. Otras, con números con parte decimal. Otras veces, con valores de Verdadero/Falso.
+
+Todos esos tipos tienen nombre, englobados en tipos de datos, y conviene conocerlos aunque sea para movernos en la terminología del desarrollo y la programación.
+
+* Cadenas de texto, texto, strings. Son
+* Números, enteros.
+* Números con decimales, floats.
+* Booleanos. Según el Teorema de Bool, se genera la dicotomía perfecta: el verdadero o falso, el conmigo o contra mí, el blanco o negro. Y en la programación hay muchos absolutos.
+
+## Operadores
+
+Suma
++
+
+Resta -
+
+Multiplicación
+*
+
+División
+/
+
+Módulo, que será el resto de una división entre dos números:
+%
+
+Mayor que, gene
+>
+
+Menor que
+<
+
+Mayor o igual que >=
+
+Menor o igual que <=
+
+Igualdad, que puede variar dependiendo del lenguaje: ==
+
+Desigualdad, que puede variar dependiendo del lenguaje:
+!=, <>
+
+## Puertas lógicas
+
+Con los operadores que comparan datos (igual o no, mayor o menor que…), obtenemos valores booleanos. ¿Es mayor 3 que 1? Sí, verdadero, TRUE. ¿Es 4 diferente de 4? No, falso, FALSE.
+
+Con estas comparaciones se pueden establecer condicionales, para bloques de código IF o bucles cualesquiera que necesitan condiciones de salida.
+
+Estas comparaciones se pueden agrupar. ¿Cómo? Mediante el uso de paréntesis. En matemáticas, los operadores de multiplicación y división se evalúan antes que sumas y restas, y las operaciones entre paréntesis se evalúan antes que las que están en paréntesis exteriores o directamente sin ellos… En operaciones de comparación o booleanas, ocurre de forma similar. Es la lógica que veíamos en filosofía, con las tablas de verdad.
+
+Evaluemos esta expresión:
+
+(4 > 3) y (5 > 2), que puede ser simplificada a TRUE y TRUE. Son independientes, son dos valores independientes, pero agrupandolas usaremos dos nuevos operadores, operadores booleanos.
+
+Conjuntor, disyuntor y negador, que aquí negaremos operador AND, operador OR y negador.
+
+* El operador AND determina que es cierto, TRUE, siempre que los dos operandos con los que juega sean verdad, TRUE.
+* El operador OR determina que es cierto, TRUE, cuando al menos uno de los dos operandos con los que juega sean verdad, TRUE.
+* El negador, NOT, simplemente convierte un TRUE en FALSE y a la inversa.
+
+En estas tablas se puede apreciar gráficamente, contando con que A y B son los operandos o inputs y C el resultado u output, también siendo 0 FALSE y 1 TRUE. Son llamadas tablas de verdad o puertas lógicas (logic gates) por si es necesario investigar otras fuentes,
+
+![](http://newstudent.groups.et.byu.net/Labs/Logic%20Gates/TruthTables.GIF)
+
+Entonces…
+
+```cs
+TRUE AND TRUE = TRUE
+TRUE AND FALSE = FALSE
+
+TRUE OR TRUE = TRUE
+TRUE OR FALSE = TRUE
+FALSE OR FALSE = FALSE
+
+NOT FALSE AND TRUE = TRUE
+```
+
+Estas expresiones se pueden encadenar hasta donde queramos, pero es aconsejable no superar las dos o tres condiciones encadenadas.
+
+# Conclusiones
+
+Estas van a ser algunas de las herramientas con las que resolverás los algoritmos más sencillos, para iniciarte. Puedes crearlos mediante pseudocódigo o mediante ordinogramas, y una vez lo tengas resuelto, lo traducirás al lenguaje de programación de tu elección.
+
+Ahora que hemos entendido conceptos básicos y comunes para la programación, es hora de empezar a ponerlo en práctica con un lenguaje de programación.
+La red está literalmente inundada sobre qué lenguaje elegir, dependiendo de lo que quieras o lo que pretendas hacer. Ejemplos en [Hipertextual](https://hipertextual.com/2015/02/elegir-lenguaje-de-programacion) o [bestprogramminglanguageforme](http://www.bestprogramminglanguagefor.me/).
+
+Puede que estos portales te ofrezcan una alternativa maravillosa, mágica. Cuando yo empecé, Python estaba de moda e iba a revolucionar el mundo de la programación. Con el tiempo he aprendido otros y detesto Python por… motivos varios.
+La experiencia te dirá cual te gusta más o con cual te manejas mejor. Es hora de elegir. 
