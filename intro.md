@@ -1,4 +1,4 @@
-#Conceptos básicos e introducción a C#
+#Conceptos básicos e introducción a CSharp
 
 C# es un lenguaje de Programación Orientado a Objetos de forma total, además de ser compilado/interpretado. Podemos decir con esta información que, salvo muy contadas excepciones, todo es una Clase.
 Programar es resolver un problema, ofrecer una herramienta con la que poder automatizar una tarea, simplificarla para el usuario… en definitiva, hacer feliz a las personas o a otros programas. Un algoritmo, lo que podía ser la unidad básica de la programación, debe ser finitio, preciso, eficaz, eficiente, con datos de entrada y datos de salida.
