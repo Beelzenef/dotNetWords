@@ -3,7 +3,8 @@ Curso de C# entre amigos
 
 ## Contenido
 
-* [Introduccion](intro.md)
+* [Introducción a la programación](introProg.md)
+* [Introduccion a C#](intro.md)
 * [Clases y herencia](clasesYherencia.md)
 * [Estructuras condicionales y bucles](estructuras.md)
 * [Tipos de datos](tiposDatos.md)
