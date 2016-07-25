@@ -27,6 +27,7 @@ Curso de C# entre amigos
 * [Clase Enum](enum.md)
 * [Clase Array](array.md)
 * [Clase Stringbuilder](stringbuilder.md)
+* [Structs](struct.md)
 
 **Elena Guzman - BeelCode**
 
