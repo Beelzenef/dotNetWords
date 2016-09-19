@@ -1,5 +1,25 @@
 # Tipos de datos
 
+No todos los datos con los que vamos a trabajar en nuestras aplicaciones son iguales. No lo son porque el trato que reciben no va a ser el mismo. Tanto en Java como en C# y otros lenguajes de programación, estos datos son definidos estrictamente. ¿Qué quiere decir? Que una variable de un tipo determinado siempre será de ese tipo determinado.
+
+¿Un ejemplo? Los números enteros:
+
+```Java
+int edad = 22;
+```
+
+Esa variable llamada "edad" y de valor 22 ahora puede ser tratada como un número entero.
+
+En cambio, si declaramos otra variable, de texto o *string* como son conocidas, encontraremos algo parecido:
+
+```Java
+String nombre = "Elena";
+```
+
+Como un dato de tipo texto o *string*, no tiene sentido que hagamos un tratamiento como número entero, ¿no es cierto? Como por ejemplo, nunca multiplicarías un nombre, esa operación no tiene sentido en inicio. Esas limitaciones se hacen por seguridad y nos darán pistas sobre qué operaciones podemos hacer con esos datos con respecto a sus tipos.
+
+Y aquí una lista de los tipos existentes, que se irán conociendo a lo largo del aprendizaje.
+
 Datos por valor:
 
 * Enteros
