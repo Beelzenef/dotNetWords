@@ -99,3 +99,5 @@ Interface IObjetoVolador {
 Volar();
 }
 ```
+
+Si quieres ampliar, puedes acudir al blog de Al Sweigart [(InventWithPython)](http://inventwithpython.com/blog/2014/12/02/why-is-object-oriented-programming-useful-with-an-role-playing-game-example/) o al blog de Elena Guzmán [(Geekstorming!)](https://geekstorming.wordpress.com/2016/06/06/por-que-es-util-la-programacion-orientada-a-objetos-con-rpgs/), donde la OOP se explica de forma dinámica y con ejemplos basados en RPGs contemporáneos.
