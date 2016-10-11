@@ -81,6 +81,26 @@ Console.ForegroundColor = ConsoleColor.Black;
 Console.Clear();
 ```
 
+### Ocultando el cursor
+
+En ocasiones, ya sea porque quieres hacer que la consola muestre algo de una forma estática sin invitar al usuario a teclear, puedes necesitar ocultar el cursor, el *prompt*. Es posible de una forma sencilla gracias a una propiedad estática de la Clase Console que trabaja con *booleanos*.
+
+Veamos como funciona:
+
+```cs
+Console.CursorVisible = false;
+```
+
+Y después de esa línea, el cursor dejará de ser visible.
+
+### Un *prompt* diferente
+
+Igual que el *prompt* se oculta, también se puede modificar de otra forma. Por lo general, este es solo una línea, fina, que parpadea. Pero cargando nuevos valores, podemos modificar el grueso de esa línea hasta ocupar todo el espacio que se le otorga a un caracter.
+
+```cs
+Console.CursorSize = 15;
+```
+
 ### En conclusión
 
 Las opciones, combinadas, permiten una combinación que les dará variedad a nuestras aplicaciones de consola.
