@@ -71,4 +71,7 @@ GetNames()
 Devuelve un array con todos los nombres de todos los miembros de una enumeración, porque no siempre conocemos los valores asociados a sus miembros.
 
 GetValues()
-Devuelve un array de enteros, pues obtiene todos los valores de los miembros de la enumaración,
+Devuelve un array de enteros, pues obtiene todos los valores de los miembros de la enumaración.
+
+Parse()
+Convierte un string al tipo de dato que representa una enumeración concreta, ambos especificados como parámetros. [Ejemplo CS](https://github.com/Beelzenef/GestionMenu/blob/master/ejemplosClase/ParseEnum.cs). Es un método que representa una alternativa a los casting del tipo de la enumeración.
