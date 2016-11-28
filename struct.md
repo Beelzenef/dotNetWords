@@ -35,7 +35,7 @@ Campos, métodos, constructores sobrecargados…
 ¿Cómo usar ese constructor sobrecargado, que asigna un título y un número de páginas a la par?
 
 ```cs
-Libro librete = new Librete(“La mitad oscura”, 100);
+Libro librete = new Libro(“La mitad oscura”, 100);
 ```
 
 A partir de ahora, podemos usar nuestra instancia de Libro, “librete”, para cambiar el título o el número de páginas, e incluso notificar nuestro progreso en la lectura.
