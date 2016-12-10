@@ -28,6 +28,8 @@ Curso de C# entre amigos
 * [Clase Array](array.md)
 * [Clase Stringbuilder](stringbuilder.md)
 * [Structs](struct.md)
+* C# + MySQL
+* OOP
 
 **Elena Guzman - BeelCode**
 
