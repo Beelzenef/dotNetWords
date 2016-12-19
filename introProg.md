@@ -48,9 +48,9 @@ Un ejemplo de diagrama de flujo de datos, también llamados ordinogramas:
 
 ![](http://4.bp.blogspot.com/-515O6ynwUok/VXQNVA_La0I/AAAAAAAAAz4/6alsXOu3XDw/s1600/Ejemplo%2Bordinograma.JPG)
 
-Es una forma gráfica de representar un algoritmo, utilizando símbolos, desde principio a fin con instrucciones y recursos. Se utilizan símbolos estandarizados.
+Es una forma gráfica de representar un algoritmo, utilizando símbolos, desde principio a fin con instrucciones y recursos. Se utilizan símbolos estandarizados. ¿Cuales son esos símbolos? Puedes consultarlos [en esta imagen](https://camo.githubusercontent.com/597efe63f68cecafaa5940c9a25bf0ea03ba39f5/68747470733a2f2f6269616e63616d696861692e6769746875622e696f2f696d672f666c6f7763686172742d7468656f72792e706e67).
 
-Todos los elementos de un ordinograma están unidos por flechas que indican la dirección del flujo. No puede haber una fecha que no apunte a ninguna parte. Todas las flechas siguen ángulos rectos y nunca hacen conexiones laterales. Se inicia en el Inicio y todo ha de acabar en el Fin. No puede haber un flujo perdido, todo ha de acabar en el flujo principal.
+Todos los elementos de un ordinograma están unidos por flechas que indican la dirección del flujo. No puede haber una flecha que no apunte a ninguna parte. Todas las flechas siguen ángulos rectos y nunca hacen conexiones laterales. Se inicia en el Inicio y todo ha de acabar en el Fin. No puede haber un flujo perdido, todo ha de acabar en el flujo principal.
 
 Representar en pseudocódigo el ordinograma que tenemos arriba podría ser:
 
