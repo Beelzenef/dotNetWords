@@ -11,6 +11,9 @@ using System.IO;
 ```
 
 ## Herencia
+
+Imagen de herencia de System.IO
+
 ### Clases complementarias
 
 #### Path
@@ -42,6 +45,25 @@ PathSeparator, un caracter que separa rutas entre ellas, por lo general el semic
 
 VolumeSeparatorChar, que es el separador de unidades lógicas, que dependerá de la raíz del sistema operativo.
 
-## Clases para ficheros
-## Clases para directorios
-## Flujos
+### Clases para ficheros
+
+#### File
+
+La Clase File es una Clase estática que nos brinda operaciones como copiar, renombrar, eliminar... ficheros. También podemos obtener información sobre los atributos de un fichero, que se gestionan a través de la enumeración FileAttributes.
+
+No es la más especializada en gestión de ficheros, pero tiene miembros muy importantes com, por ejemplo, la comprobación de si un determinado fichero existe.
+
+Colabora fuertemente con la Clase Path, mencionada anteriormente.
+
+Propiedades
+
+Exists
+
+Métodos
+
+AppendAllText
+AppendText
+CreateText
+
+### Clases para directorios
+### Flujos
