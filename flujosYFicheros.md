@@ -10,6 +10,17 @@ Debido a la gran cantidad de operaciones que se pueden realizar con ficheros, di
 using System.IO;
 ```
 
+### Pero antes de empezar... ¿qué es un flujo?
+
+Un flujo es el modo en que C#, o la plataforma .NET, gestionan los ficheros. Son zonas de memoria de diferentes tipos, porque pueden ser texto en forma de cadenas de texto o contenido binario, que permiten entrada y salida.
+
+Imagina abrir un cuaderno para leer, escribir o borrar de su contenido. Eso sería abrir un flujo. Cuando termines tu tarea, necesitarás cerrar el cuaderno para que otro pueda operar con él, o simplemente el sistema operativo recupere el control del mismo. Como particularidad que no debes olvidar, es que diferentes propósitos con un fichero, o nuestro cuaderno, requerirá de abrir un flujo diferente.
+
+Si quieres leer de un fichero, debes abrir un flujo para efectuar una lectura, y después cerrar.
+Si quieres escribir de ese mismo fichero, debes abrir un nuevo flujo para escribir en ese fichero, y cerrar el flujo.
+
+Puede parecer restrictivo e incómodo, pero a más control, menos oportunidades para fallar y corromper ficheros.
+
 ## Herencia
 
 Imagen de herencia de System.IO
