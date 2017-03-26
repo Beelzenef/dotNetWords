@@ -56,6 +56,19 @@ PathSeparator, un caracter que separa rutas entre ellas, por lo general el semic
 
 VolumeSeparatorChar, que es el separador de unidades lógicas, que dependerá de la raíz del sistema operativo.
 
+Metodos:
+
+GetExtension(), un método que recibe la ruta a un fichero y devuelve una cadena de texto que será la extensión del fichero en cuestión. Incluso es posible compararlo con una cadena explícita para comprobar si es de una extensión concreta:
+
+```cs
+string rutaFichero = @"C:\imagenes\unaImagen.jpg";
+
+if (System.IO.Path.GetExtension(item) == ".jpg")
+{
+                  Console.WriteLine("¡El fichero es una imagen!");   
+}
+```
+
 ### Clases para ficheros
 
 #### File
