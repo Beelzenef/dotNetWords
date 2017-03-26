@@ -63,7 +63,7 @@ GetExtension(), un método que recibe la ruta a un fichero y devuelve una cadena
 ```cs
 string rutaFichero = @"C:\imagenes\unaImagen.jpg";
 
-if (System.IO.Path.GetExtension(item) == ".jpg")
+if (System.IO.Path.GetExtension(rutaFichero) == ".jpg")
 {
                   Console.WriteLine("¡El fichero es una imagen!");   
 }
