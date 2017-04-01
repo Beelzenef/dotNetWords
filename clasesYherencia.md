@@ -24,7 +24,7 @@ Nombre = Abraxas;
 Fuerza = 13;
 Velocidad = 10;
 
-// Habilidades
+// Métodos
 AtacarConEspada();
 InvocarAnimal(3);
 }
@@ -37,12 +37,26 @@ En el ejemplo, tenemos los datos de un personaje además de dos habilidades, en 
 Tu personaje puede ser un guerrero, un mago o cualquier otra clase típica en un juego tipo D&D. Pero además, puede ser un humano o un elfo o un tiflin. Es una raza antes que cualquier oficio que haya escogido a lo largo de su vida. Por lo tanto, podemos decir que nuestro personaje puede ser un Humano Mago, antes Humano que Mago. Por lo tanto, nuestro Mago hereda de Humano, teniendo todo lo que le hace ser Humano.
 
 ```cs
-class Mago : Humano {
-}
+class Criatura { }
+
+class Personaje : Criatura  { }
+
+class Druida : Personaje  { }
+
+Druida miNuevoDruida = new Druida();
+
 ```
 
 Todas las propiedades y métodos (características y habilidades) que tenga el Humano, ahora las tendrá este Mago que estamos creando.
 Hemos creado la herencia, porque la Clase Mago hereda todo lo que tiene el Humano.
+
+## Polimorfismo
+
+```cs
+
+Personaje otroPersonaje = new Druida();
+
+```
 
 ## Instancias
 
