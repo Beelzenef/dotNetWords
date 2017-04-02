@@ -68,6 +68,12 @@ if (System.IO.Path.GetExtension(rutaFichero) == ".jpg")
                   Console.WriteLine("¡El fichero es una imagen!");   
 }
 ```
+GetFullPath(), recibe una ruta a un fichero o directorio y devuelve la ruta completa de un fichero o directorio, que puede ser usada como ruta absoluta para operaciones varias.
+
+ChangeExtension(), recibe una ruta a un fichero y la extensión a la que quieres cambiar, devolviendo una cadena con la extension cambiada en el fichero.
+
+GetDirectoryName(), recibe una ruta a un fichero o directorio y devuelve el nombre del directorio en el cual este elemento que recibe está contenido.
+
 
 ### Clases para ficheros
 
