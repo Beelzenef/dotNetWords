@@ -31,6 +31,15 @@ Curso de C# entre amigos
 * C# + MySQL
 * OOP
 
+Para interfaces gráficas:
+
+* [Introducción a WPF](https://github.com/Beelzenef/curseU/blob/master/WPF/introWPF.md)
+* Aplicaciones web
+* Controles básicos
+* Controles generales
+* Contenedores
+* Recordando a Windows Forms...
+
 **Elena Guzman - BeelCode**
 
 ![Beelzenef creando](https://geekstorming.files.wordpress.com/2015/05/creando.png)
