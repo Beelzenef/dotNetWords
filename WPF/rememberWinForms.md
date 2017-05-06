@@ -40,6 +40,8 @@ if (buscadorFicheros.ShowDialog() == true)
 }
 ```
 
+Este código puede ir, por ejemplo, en el evento Click de un botón. Estaríamos simulando entonces ese control desaparecido que era OpenFileDialog.
+
 Algunos filtros útiles:
 
 ```cs
@@ -48,4 +50,24 @@ Algunos filtros útiles:
 "Todos (*.*)|*.*";
 "Ficheros de texto (*.txt)|*.txt";
 "JPGs (*.jpg)|*.jpg";
+```
+
+## DatePicker
+
+El control de errores es algo fundamental. Y con la introducción de fechas es algo habitual. ¿Por qué no evitarlo entonces? Puedes hacerlo con un control que te ofrezca un calendario para elegir una fecha existente, válida.
+
+En Windows Forms, era DateTimePicker. En WPF, tenemos [DatePicker](https://msdn.microsoft.com/es-es/library/system.windows.controls.datepicker(v=vs.110).aspx).
+
+Tanto en XAML como en C#, podemos especificar los valores de diferentes miembros.
+
+* DisplayDate, Propiedad que obtiene o establece un DateTime con la fecha mostrada en el control
+* SelectedDate, Propiedad que obtiene o establece la fecha seleccionada en el calendario como un DateTime
+* CalendarStyle
+* FirstDayOfWeek
+
+Un ejemplo para instancia y cambio para la Propiedad de SelectedDate:
+
+```cs
+DatePicker dpFecha = new DatePicker();
+dpFecha.SelectedDate = DateTime.Today;
 ```
