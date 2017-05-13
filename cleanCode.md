@@ -13,8 +13,8 @@ He aquí las lecciones más destacables y que podrían servir en el día a día 
 
 Lo ideal es organizar el código de esta forma:
 
-* Inicio: conceptos y algoritmos de alto nivel
-* Mitad: más detalles
+* Inicio: conceptos y algoritmos de alto nivel.
+* Mitad: más detalles.
 * Final: código de menor nivel.
 
 ## Sobre distancia vertical
@@ -43,13 +43,13 @@ Para alcanzar ese punto medio, podemos diferenciar los buenos y malos comentario
 
 ### Sobre buenos comentarios:
 
-* Legales, sobre las condiciones de uso
-* Informativos (por ejemplo en métodos abstractos)
-* Explicación del método (e.g. criterios de comparación)
-* Clarificación
-* Advertencia de consecuencias
-* Comentarios de TO-DO
-* Ampliaciones posibles
+* Legales, sobre las condiciones de uso.
+* Informativos (por ejemplo en métodos abstractos).
+* Explicación del método (e.g. criterios de comparación).
+* Clarificación.
+* Advertencia de consecuencias.
+* Comentarios de TO-DO.
+* Ampliaciones posibles.
 
 ### Sobre malos comentarios:
 
@@ -83,9 +83,9 @@ A fin de simplificar la función, puedes utilizar el polimorfismo para simplific
 
 Tenemos varios números mágicos a tener en cuenta:
 
-* 0 como número ideal
-* 3 como algo a evitar
-* 3+ es mala señal
+* 0 como número ideal.
+* 3 como algo a evitar.
+* 3+ es mala señal.
 
 ¿Pueden agruparse los argumentos en instancias de una Clase? Hazlo, es una señal para refactorizar y reorganizar los datos.
 
@@ -175,12 +175,12 @@ El nombrar un fragmento de código debe resolver tres preguntas:
 
 Orden de elementos:
 
-* Variables
-* Constantes públicas estáticas
-* Variables estáticas privadas
-* Variables privadas de instancia
-* Funciones públicas
-* Funciones privadas y otras lógicas
+* Variables.
+* Constantes públicas estáticas.
+* Variables estáticas privadas.
+* Variables privadas de instancia.
+* Funciones públicas.
+* Funciones privadas y otras lógicas.
 
 Pequeñas, con la responsabilidad adecuada, con cohesión.
  
@@ -193,6 +193,7 @@ Sobre comentarios
 * Información inapropiada.
 * Comentarios obsoletos.
 * Comentarios redundantes.
+* Comentarios cuya utilidad no esté clara, que no sea obvio el motivo por el cual están ahí.
 * Código comentado.
 
 Sobre nombres
