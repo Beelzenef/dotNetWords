@@ -52,6 +52,27 @@ Algunos filtros útiles:
 "JPGs (*.jpg)|*.jpg";
 ```
 
+## SaveFileDialog
+
+Del mismo modo y en el mismo espacio de nombre que OpenFileDialog, contamos con un control que nos permitirá navegar por la ruta de directorios para seleccionar un fichero donde almacenar nuestros datos en el disco duro.
+
+```cs
+SaveFileDialog guardado = new SaveFileDialog();
+```
+
+Y en el evento oportuno, cuando toque guardar el contenido de, por ejemplo, una caja de texto que funcione como editor...
+
+```cs
+string rutaFichero = string.Emtpy;
+string texto = string.Empty;
+
+if (guardado.ShowDialog() == true)
+{
+  texto = txtBox_Editor.Text;
+  File.WriteAllText(rutaFichero, texto);
+}
+```
+
 ## DatePicker
 
 El control de errores es algo fundamental. Y con la introducción de fechas es algo habitual. ¿Por qué no evitarlo entonces? Puedes hacerlo con un control que te ofrezca un calendario para elegir una fecha existente, válida.
