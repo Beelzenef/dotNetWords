@@ -28,6 +28,20 @@ Existen tres formas de definir un botón...
 </Button>
 ```
 
+## Label
+
+El control `Label` o etiqueta es tan simple como una región de la aplicación donde se suele colocar un texto, probablemente informativo.
+
+```xaml
+<Label Content="Informando al usuario..."/>
+```
+
+Suele tener poca interacción, pues no está orientado a operaciones directas con el usuario. Podemos cambiar sus colores de fondo y de letra, con algunas propiedades:
+
+```xaml
+<Label Content="Texto blanco sobre fondo negro" Background="Black" Foreground="White"/>
+```
+
 ## TextBox
 
 Para un TextBox que solo admita números, basta con anular la propagación del evento PreviewTextInput. El código se traduce en:
