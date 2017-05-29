@@ -44,7 +44,19 @@ Suele tener poca interacción, pues no está orientado a operaciones directas co
 
 ## TextBox
 
-Para un TextBox que solo admita números, basta con anular la propagación del evento PreviewTextInput. El código se traduce en:
+Una caja de texto editable, ideal para introducir datos a través del teclado. El contenido de la caja no se aplica en la propiedad `Content`, si no en la propiedad `Text`:
+
+```xaml
+<TextBox Text="Texto rojo sobre fondo negro" Background="Black" Foreground="Red"/>
+```
+
+De por sí, este control no tiene saltos de línea, pero aplicarlos es muy fácil:
+
+```xaml
+<TextBox AcceptsReturn="True" TextWrapping="Wrap"/>
+```
+
+Para un `TextBox` que solo admita números, basta con anular la propagación del evento PreviewTextInput. El código se traduce en:
 
 ```cs
 private void textBoxX_PreviewTextInput(object sender, TextCompositionEventArgs e)
