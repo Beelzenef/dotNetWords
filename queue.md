@@ -31,8 +31,10 @@ Queue<string> colaNombres= new Queue<string>(10);
 
 La lista de los métodos más frecuentes en el uso de la Clase Queue. Son limitados en número pues no funciona como una lista normal, se quiere mantener el comportamiento específico de FIFO (First in, First out):
 
-* Clear(), limpia la lista, eliminando todos los elementos.
-* Contains(T), devuelve un booleano comprobando si el elemento pasado como parámetro se encuentra o no en la cola.
-* Dequeue(), elimina el primer elemento de la cola.
-* Enqueue(T), añade al final de la cola el elemento especificado como parámetro.
-* Peek(), devuelve el primer elemento en la cola, lo muestra sin eliminarlo de la cola.
+| Método      | Tipo de dato | Explicacion  |
+| ------------- |:--------------------:| -----|
+|Clear()| void |Limpia la lista, eliminando todos los elementos |
+|Contains(T)| bool |Devuelve un booleano comprobando si el elemento pasado como parámetro se encuentra o no en la cola.|
+|Dequeue()|T|Elimina el primer elemento de la cola |
+|Enqueue(T)| void |Añade al final de la cola el elemento especificado como parámetro|
+|Peek()|T| Devuelve el primer elemento en la cola, lo muestra sin eliminarlo de la cola|
