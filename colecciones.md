@@ -5,7 +5,7 @@ Las colecciones son listas de datos que se gestionan de forma dinámica. Al cont
 Existen varias de ellas, que aquí conoceremos, en forma de Clases:
 
 * [List](https://github.com/Beelzenef/curseU/blob/master/list.md)
-* ArrayList
-* Stack
-* Queue
-* Dictionary
+* [ArrayList](arraylist.md)
+* [Stack](stack.md)
+* [Queue](queue.md)
+* [Dictionary](dictionary.md)
