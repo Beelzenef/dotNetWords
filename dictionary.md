@@ -28,13 +28,8 @@ Dictionary<int, Libro> biblioteca = new Dictionary<int, string>(20);
 
 |Método| Tipo de dato | Explicacion|
 |----|:----:|----|
-| Add(O) |void | Añade al final de la lista el elemento especificado como parámetro|
+|Add(TClave, TValor) |void | Añade al final de la lista el par de clave-valor especificado como parámetro|
 |Clear() | void | Limpia la lista, eliminando todos los elementos. |
-|Contains(O)|bool|Busca la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.|
-|IndexOf(O)|int| Devuelve el índice, la posición, de la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.|
-|LastIndexOf(O)|int| Devuelve el índice, la posición, de la última ocurrencia del elemento a buscar, que se especifica en el parámetro.|
-|Remove(O)|void| Elimina la primera ocurrencia o aparición del dato especificado como parámetro.|
-|RemoveAt(int)|void| Que elimina el dato que se encuentra en la posición que se deterima en el parámetro.|
-|RemoveRange(int, int) |void| Elimina todos los elementos en el rango especificado en los dos parámetros.|
-|Reverse() |void| Invierte todos los elementos en la lista.|
-|Sort() |void| Ordena todos los elementos bajo un criterio por defecto. Para listas con datos complejos, hay que especificar nuevos criterios.|
+|ContainsKey(TClave)|bool|Busca la primera ocurrencia en el diccionario con la clave especificada como parámetro|
+|ContainsValor(TValor)|bool|Busca la primera ocurrencia en el diccionario con el valor especificado como parámetro|
+|Remove(TKey)|void| Elimina la primera ocurrencia o aparición del dato especificado como parámetro.|
