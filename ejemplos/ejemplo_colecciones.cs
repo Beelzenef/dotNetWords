@@ -31,3 +31,10 @@ listaPersonajes.Add(new Personaje("Tirsa Ventar", 11));
 
 Console.WriteLine(listaPersonajes[1].Nombre);
 // Se escribirá el nombre "Tirsa Ventar"
+
+// Diccionario con enteros y Clase Libro
+
+Dictionary<int, Libro> listaLibros = new Dictionary<int, Libro>();
+
+listaLibros.Add(1, new Libro("Eragon", "Paolini"));
+listaLibros.Add(2, new Libro("Fundacion", "Asimov"));
