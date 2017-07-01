@@ -4,7 +4,7 @@ Los contenedores son los elementos que recibirán en su interior los controles d
 
 Necesitarás un contenedor principal, pudiendo este contener otros contenedores en su interior. También puedes cambiarlo a cualquiera de tu preferencia, hasta conseguir la interfaz gráfica que desees.
 
-## Stackpanel
+## StackPanel
 
 El StackPanel es un contenedor que apila de forma automática los controles que se colocan en su interior. Por defecto, lo hace en horizontal, pero esto puede ser cambiado.
 
@@ -34,4 +34,21 @@ Un StackPanel que apila dos botones en horizontal:
 
 ## Grid
 
-## Dockpanel
+## DockPanel
+
+DockPanel es otro contenedor que tiene la particularidad de que apila todo de forma horizontal, haciendo *wrap* con los mismos como un procesador de texto hace con las palabras cuando llega al límite de la página.
+
+Un DockPanel vacío:
+
+```xaml
+<DockPanel></DockPanel>
+```
+
+Un DockPanel con dos botones:
+
+```xaml
+<DockPanel>
+    <Button Content="Un boton" Margin="5"/>
+    <Button Content="Otro boton" Margin="5"/>
+</DockPanel>
+```
