@@ -40,7 +40,7 @@ Para interfaces gráficas:
 * [Controles específicos](WPF/controlesEspecificos.md)
 * [Contenedores](WPF/contenedores.md)
 * [Datacontext](WPF/datacontext.md)
-* [Recordando a Windows Forms...](WPF/rememberWinForms.md
+* [Recordando a Windows Forms...](WPF/rememberWinForms.md)
 
 **Elena Guzman - BeelCode**
 
