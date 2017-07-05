@@ -56,3 +56,15 @@ Sobre un botón:
   </ContextMenu>
 </Button.ContextMenu/>
 ```
+## CheckBox
+
+El control de `CheckBox` es aquel que nos permite marcar una casilla con un texto asociado.
+
+```xml
+ <CheckBox>Me gusta leer</CheckBox>
+```
+Cuando inicia la aplicación, algunas de las opciones necesitan estar marcadas. Una opción habilitada por defecto. Para especificarlo, acudiremos a la Propiedad `IsChecked` que admite valores *booleanos*.
+
+```xml
+ <CheckBox IsChecked="True">Me gusta la ciencia ficción</CheckBox>
+```
