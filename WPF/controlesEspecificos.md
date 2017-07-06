@@ -68,3 +68,10 @@ Cuando inicia la aplicación, algunas de las opciones necesitan estar marcadas. 
 ```xml
  <CheckBox IsChecked="True">Me gusta la ciencia ficción</CheckBox>
 ```
+Este control también permite una particularidad que se conoce como tercer estado o *third state*. Hemos comentado que admite valores *booleanos*, pero también valores `null`. Es un estado indeterminado, ni marcado ni sin marcar. Podemos interpretarlo como el estado que tiene este control cuando todavía no ha recibido ninguna operación, nunca ha sido cambiado de valor.
+
+Se marca con la Propiedad `IsThreeState`, que se marca como *booleano* a su vez. Así, puede tener el tercer estado, y podrá tomar valores `null`. Como en el ejemplo:
+```xml
+ <CheckBox IsThreeState="True" IsChecked="{x:Null}">Me gusta la ciencia ficción</CheckBox>
+```
+El valor de la Propiedad `IsChecked` es diferente. Está entre `{}` y además muestra una sintaxis adicional. Significa que es un valor interpretable por el sistema, no se toma como un literal. Los valores `null` se especifican de este modo en WPF.
