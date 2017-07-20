@@ -75,3 +75,23 @@ Se marca con la Propiedad `IsThreeState`, que se marca como *booleano* a su vez.
  <CheckBox IsThreeState="True" IsChecked="{x:Null}">Me gusta la ciencia ficción</CheckBox>
 ```
 El valor de la Propiedad `IsChecked` es diferente. Está entre `{}` y además muestra una sintaxis adicional. Significa que es un valor interpretable por el sistema, no se toma como un literal. Los valores `null` se especifican de este modo en WPF.
+
+## ComboBox
+
+El control de `ComboBox` es una lista desplegable que nos ofrece diversas opciones, para usos diversos.
+
+Para crear una lista desplegable vacía:
+
+```xml
+ <ComboBox/>
+ ```
+ 
+Obviamente necesitaremos contenido que mostrar en esa lista desplegable, y para eso necesitaremos elementos de tipo lista. Esos elementos son `ComboBoxItem`, y podemos declarar tantos como necesitemos.
+
+```xml
+ <ComboBox>
+  <ComboBoxItem>La historia interminable</ComboBoxItem>
+  <ComboBoxItem>Pesadilla antes de Navidad</ComboBoxItem>
+  <ComboBoxItem>Dune</ComboBoxItem>
+ </ComboBox>
+ ```
