@@ -95,3 +95,23 @@ Obviamente necesitaremos contenido que mostrar en esa lista desplegable, y para 
   <ComboBoxItem>Dune</ComboBoxItem>
  </ComboBox>
  ```
+ 
+ ## ListBox
+ 
+ No siempre necesitaremos listas desplegables, si no listas normales, una caja con diferentes elementos para diferentes propósitos. Para eso, usaremos el control `ListBox`.
+ 
+ Para crer una lista, vacía:
+ 
+ ```xml
+ <ListBox/>
+ ```
+ 
+ Para añadir contenido, igual que con `ComboBox`, necesitaremos elementos específicos. En esta ocasión usaremos los `ListBoxItem`, y aquí el ejemplo con una lista de libros.
+ 
+ ```xml
+ <ListBox>
+  <ListBoxItem>Alas de fuego</ListBoxItem>
+  <ListBoxItem>Frío infernal</ListBoxItem>
+  <ListBoxItem>La ciudad de los libros soñadores</ListBoxItem>
+ </ListBox>
+ ```
