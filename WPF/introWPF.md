@@ -36,3 +36,7 @@ Una interfaz sencilla, con un control de lista y un botón, se reduce a esto.
 
 * _Data binding_
 * Nuevas Clases
+
+Si has trabajado en el pasado con Windows Forms, serás de los que más noten la diferencia. No solo la forma de concebir las aplicaciones con GUI han cambiado, si no también algunas Clases bastante útiles, quizás de primera mano. Bien han podido cambiar el nombre, el modo en que operamos con ellas o ambas cosas.
+
+Un ejemplo concreto son las Clases que operan con ficheros: OpenFileDialog y SaveFileDialog. El modo de proceder es ligeramente diferente y puede consultarse en [este enlace, donde sentimos la nostalgia por WinForms](rememberWinForms.md).
