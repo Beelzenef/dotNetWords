@@ -34,6 +34,30 @@ Un StackPanel que apila dos botones en horizontal:
 
 ## Grid
 
+Es un panel, el más poderoso de WPF, por su flexibilidad que nos permite cualquier distribución. Está organizado en filas y columnas. Se considera innecesario otros paneles, pero ayudan a diferentes tareas. La joya de la corona. La intersección de filas y columnas es una celda, que puede ser considerada otro contenedor. Sus dimensiones se equilibrarán a partir del espacio disponible.
+
+Para crear una rejilla hay que definir el número de celdas, que se define con número de filas y de columnas. Es una rejilla orientada a la distribución, por lo que no muestra sus líneas.
+
+Un Grid que está vacío:
+
+```xaml
+<Grid></Grid>
+```
+
+Un Grid que tiene dos columnas y una fila:
+
+```xaml
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition/>
+    </Grid.RowDefinitions>
+</Grid>
+```
+
 ## DockPanel
 
 DockPanel es otro contenedor que tiene la particularidad de que apila todo de forma horizontal, haciendo *wrap* con los mismos como un procesador de texto hace con las palabras cuando llega al límite de la página.
