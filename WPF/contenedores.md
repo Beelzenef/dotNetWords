@@ -76,3 +76,35 @@ Un DockPanel con dos botones:
     <Button Content="Otro boton" Margin="5"/>
 </DockPanel>
 ```
+
+## WrapPanel
+
+Es un panel que agrupa los controles de izquierda a derecha y de arriba a abajo. Por defecto, empieza a introducir controles arriba a la izquierda y sigue añadiendo en la estructura del lenguaje occidental.
+
+Su propiedad Orientation me permite cambiar la orientación, empezando a agrupar en vertical en lugar de horizontal.
+
+Dependiendo de las dimensiones de su contenido, irá distribuyendo de la forma más óptima aunque puede haber desaprovechamiento del espacio. Cuando la distribución está en horizontal y hay un número elemento superior a los que caben, los últimos elementos añadidos no se ven.
+
+Un WrapPanel vacío:
+
+```xaml
+<WrapPanel></WrapPanel>
+```
+
+Un WrapPanel con dos botones:
+
+```xaml
+<WrapPanel>
+    <Button Content="Un boton" Margin="5"/>
+    <Button Content="Otro boton" Margin="5"/>
+</WrapPanel>
+```
+
+Un WrapPanel con dos botones y orientación horizontal:
+
+```xaml
+<WrapPanel Orientation="Horizontal">
+    <Button Content="Un boton" Margin="5"/>
+    <Button Content="Otro boton" Margin="5"/>
+</WrapPanel>
+```
