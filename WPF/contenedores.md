@@ -108,3 +108,21 @@ Un WrapPanel con dos botones y orientación horizontal:
     <Button Content="Otro boton" Margin="5"/>
 </WrapPanel>
 ```
+
+## Canvas
+
+Un panel o contenedor que sirve para gestionar la distribución de forma absoluta de los controles que contiene. Se utiliza coordenada o posición absoluta, y necesita compararlo con algún punto del Canvas en el cual se encuentra. Para esto utiliza los nombres de Left, Top, Bottom, Right.
+
+Un Canvas vacío:
+
+```xaml
+<Canvas></Canvas>
+```
+
+Un Canvas con un botón en una posición determinada con respecto al Canvas en el cual se ha definido, usando posiciones `Top` y `Left`:
+
+```xaml
+<Canvas>
+    <Button Content="Un boton" Canvas.Left="40" Canvas.Top="31" Width="63" Height="41"/>
+</Canvas>
+```
