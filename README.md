@@ -42,6 +42,10 @@ Para interfaces gráficas:
 * [Datacontext](WPF/datacontext.md)
 * [Recordando a Windows Forms...](WPF/rememberWinForms.md)
 
+Para aplicaciones web
+
+* [Introducción a ASP NET Core](anc/intro.md)
+
 **Elena Guzman - BeelCode**
 
 ![Beelzenef creando](https://geekstorming.files.wordpress.com/2015/05/creando.png)
