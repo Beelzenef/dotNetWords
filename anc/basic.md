@@ -1,4 +1,4 @@
-#Conocimientos básicos de ASP.NET Core
+# Conocimientos básicos de ASP.NET Core
 
 Una aplicación ASP.NET Core es una aplicación de consola que crea un servidor web al ejecutar su método `Main`.
 
