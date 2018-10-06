@@ -32,7 +32,7 @@ Curso de C# entre amigos
 * C# + MySQL
 * OOP
 
-Para interfaces gráficas:
+### Para interfaces gráficas
 
 * [Introducción a WPF](WPF/introWPF.md)
 * Aplicaciones web
@@ -42,12 +42,16 @@ Para interfaces gráficas:
 * [Datacontext](WPF/datacontext.md)
 * [Recordando a Windows Forms...](WPF/rememberWinForms.md)
 
-Para aplicaciones web
+### Para aplicaciones web
 
 * [Introducción a ASP NET Core](anc/intro.md)
 * [Conceptos básicos](anc/basic.md)
 * [_Razor pages_](anc/razor.md)
 * [Bases de datos](anc/bd.md)
+
+### Xamarin
+
+* [Introducción a Xamarin](xam/intro.md)
 
 **Elena Guzman - BeelCode**
 
