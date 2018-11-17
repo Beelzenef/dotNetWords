@@ -52,6 +52,8 @@ Curso de C# entre amigos
 ### Xamarin
 
 * [Introducción a Xamarin](xam/intro.md)
+* [Creando nuestra primera _app_](xam/first.md)
+* [Enlaces útiles](xam/tools.md)
 
 **Elena Guzman - BeelCode**
 
