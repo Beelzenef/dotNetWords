@@ -1,4 +1,4 @@
-# curseU
+# dotNetWords
 Curso de C# entre amigos
 
 ## Contenido
