@@ -112,13 +112,13 @@ En el cuerpo de la Clase que tenemos, añadiremos variables, propiedades, funcio
 
 ## _DataBinding_
 
-### Interpellation
+### _Interpollation_
 
 Es el modo más sencillo de hacer _dataBinding_ en nuestra aplicación. Se puede apreciar en nuestro componente inicial, al ver cómo nuestra variable `title`, que da nombre a la aplicación desde TS, se referencia y aplica en nuestro fichero HTML con `{{ title }}`. Es sencillo pero no permite mucha interactuación con el usuario.
 
-¿Qué ocurre si no es una variable con valor único, si es un _array_? Angular permite interactuar con datos en forma de lista. En nuestro fichero HTML, una vez 
+#### _Expression context_
 
-En TypeScript:
+¿Qué ocurre si no es una variable con valor único, si es un _array_? Angular permite operar con datos que son listas en bucles que podemos declarar en nuestro código. Si declaramos un array en nuestro componente con TypeScript:
 
 ```ts
 names : string[] = [
@@ -126,7 +126,7 @@ names : string[] = [
   ]
 ```
 
-En HTML:
+... en nuestro fichero HTML podemos recorrerlo como si de un bucle FOREACH se tratase:
 
 ```html
 <ul>
@@ -134,4 +134,24 @@ En HTML:
       {{item}}
     </li>
 </ul>
+```
+
+### _Template statements_
+
+Esos elementos no solo se pueden listar, si no que podemos asociarles eventos como el `click()`. En nuestra lista de elementos en HTML, añadiremos una sentencia donde el evento `click()` será tratado en un método llamado `clickando()`, que recibirá el elemento de la lista que estemos pulsando.
+
+```html
+<ul>
+    <li *ngFor="let item of names" (click)="clickando(item)">
+      {{item}}
+    </li>
+</ul>
+```
+
+En nuestro código del componente hemos declarado ese método, que recibe un `string`... ¡y solo queda mostrarlo por la consola!
+
+```ts
+clickando(sentence : string) {
+    console.log("clicking: " + sentence)
+  }
 ```
