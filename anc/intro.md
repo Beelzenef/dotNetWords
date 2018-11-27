@@ -19,6 +19,10 @@ ASP.NET Core crea sus aplicaciones con el modelo MVC, dividiendo el código en V
 * [_Razor pages_](razor.md)
 * [Bases de datos](bd.md)
 
+Y complementando:
+
+* [Angular](angular.md)
+
 ### Enlaces
 
 * [Documentación oficial](https://docs.microsoft.com/es-es/aspnet/core/?view=aspnetcore-2.1)

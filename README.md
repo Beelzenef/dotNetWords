@@ -48,6 +48,7 @@ Curso de C# entre amigos
 * [Conceptos básicos](anc/basic.md)
 * [_Razor pages_](anc/razor.md)
 * [Bases de datos](anc/bd.md)
+* [Bases de datos](anc/angular.md)
 
 ### Xamarin
 

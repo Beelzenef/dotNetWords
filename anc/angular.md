@@ -155,3 +155,26 @@ clickando(sentence : string) {
     console.log("clicking: " + sentence)
   }
 ```
+
+### _Data-binding two-way_
+
+Es posible hacer _data binding_ de forma bidireccional. Para comprobar de forma sencilla, enlazaremos la variable del título de nuestra aplicación con una caja de texto, un `input` de tipo texto.
+
+Para ello, modificaremos el módulo del componente con el que trabajamos para añadir una dependiencia, `FormsModule`.
+
+```ts
+import { FormsModule } from '@angular/forms'
+
+...
+
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+```
+
+Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _bindear_ la variable `title` con la caja de texto. Si modificamos su contenido en la aplicación, comprobaremos que el títuloque se muestra en nuestra aplicación se cambia a tiempo real.
+
+```ts
+<input type="text" [(ngModel)]="title"/>
+```
