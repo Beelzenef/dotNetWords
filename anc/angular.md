@@ -1,6 +1,6 @@
 # Angular
 
-Es un _framework_ para el desarrollo de aplicaciones web y de escritorio. Encuentra más información en [su sitio web](https://angular.io/).
+Es un _framework_ para el desarrollo de aplicaciones web y de escritorio. Encuentra más información en [su sitio web](https://angular.io/). Encuentra ejemplos commit a commit en [mi GitHub](https://github.com/Beelzenef/anAdventure).
 
 ## Instalación de NodeJS
 
@@ -32,7 +32,26 @@ Creando una nueva aplicación con Angular:
 
 `> ng serve`
 
-## Angular routing
+Por defecto, necesitarás acceder a la aplicación desde [http://localhost:4200](http://localhost:4200), aunque también puedes elegir servir la aplicación desde otro puerto:
+
+`> ng serve --port 4201`
+
+## _Angular routing_
+
+Es el modo para viajar entre páginas web para hacer de nuestra aplicación un sitio interactivo y dinámico. Para enrutar, necesitaremos seguir unos cuantos pasos, empezando por crear componentes a los que viajaremos. La estructura básica de un componente es de tres ficheros: HTML, CSS y TypeScript. Todo esto podemos organizarlo en la estructura de directorios por componentes, y así localizar fácilmente nuestro código.
+
+Para un _Component_ llamado _Start_ escribiríamos en nuestro fichero Typescript:
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+
+})
+export class OneComponent { }
+```
+
+Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
 
 ## Eligiendo formato de estilos
 
