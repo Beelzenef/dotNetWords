@@ -36,23 +36,6 @@ Por defecto, necesitarás acceder a la aplicación desde [http://localhost:4200]
 
 `> ng serve --port 4201`
 
-## _Angular routing_
-
-Es el modo para viajar entre páginas web para hacer de nuestra aplicación un sitio interactivo y dinámico. Para enrutar, necesitaremos seguir unos cuantos pasos, empezando por crear componentes a los que viajaremos. La estructura básica de un componente es de tres ficheros: HTML, CSS y TypeScript. Todo esto podemos organizarlo en la estructura de directorios por componentes, y así localizar fácilmente nuestro código.
-
-Para un _Component_ llamado _Start_ escribiríamos en nuestro fichero Typescript:
-
-```ts
-import { Component } from '@angular/core';
-
-@Component({
-
-})
-export class OneComponent { }
-```
-
-Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
-
 ## Eligiendo formato de estilos
 
 Al momento de crear una aplicación con Angular, se te da a elegir el formato de estilo que puedes utilizar en las aplicaciones, a saber:
@@ -188,7 +171,6 @@ import { FormsModule } from '@angular/forms'
 
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule
 ```
 
@@ -197,3 +179,62 @@ Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _binde
 ```ts
 <input type="text" [(ngModel)]="title"/>
 ```
+
+## _Angular routing_
+
+Es el modo para viajar entre páginas web para hacer de nuestra aplicación un sitio interactivo y dinámico. Para enrutar, necesitaremos seguir unos cuantos pasos, empezando por crear componentes a los que viajaremos. La estructura básica de un componente es de tres ficheros: HTML, CSS y TypeScript. Todo esto podemos organizarlo en la estructura de directorios por componentes, y así localizar fácilmente nuestro código.
+
+Para un _Component_ llamado _Start_ escribiríamos en nuestro fichero Typescript:
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+
+})
+export class OneComponent { }
+```
+
+Crearíamos esta estructura para cada componente que vayamos a añadir en nuestra aplicación, y ahora es momento de viajar hacia `app.module.ts`.  Allí vamos a importar algunos módulos, para comenzar el enrutamiento.
+
+```ts
+import { Routes, RouterModule } from '@angular/router';
+```
+
+Crearemos un array de `Routes`, con el que redireccionaremos a diferentes componentes dependiendo de la URL que especifiquemos en nuestro navegador. Para ello, debemos importar también los componentes que vyaamos a usar.
+
+```ts
+
+// Importamos los componentes que vayamos a usar
+import { AppComponent } from './components/app.component';
+import { StartComponent } from './components/start/start.component';
+import { CharacterComponent } from './components/character/character.component';
+
+// Creamos un array de Routes, enlazando una URL con un componente que se va a mostrar
+const routes : Routes = [
+    { path: "", component: StartComponent },
+    { path: "story", component: StoryComponent },
+    { path: "character", component: CharacterComponent },
+    { path: "**", redirectTo: "" }
+];
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    StartComponent,
+    CharacterComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    // Añadimos esta declaración de import, además de especificar que el objeto de rounting será el array creado
+    RouterModule.forRoot(routes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
