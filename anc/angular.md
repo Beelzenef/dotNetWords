@@ -36,6 +36,10 @@ Por defecto, necesitarás acceder a la aplicación desde [http://localhost:4200]
 
 `> ng serve --port 4201`
 
+Cuando clonas un proyecto ya iniciado, en tu copia local necesitarás instalar la aplicación, así que una vez dentro del directorio de la misma, ejecuta:
+
+`> npm install`
+
 ## Eligiendo formato de estilos
 
 Al momento de crear una aplicación con Angular, se te da a elegir el formato de estilo que puedes utilizar en las aplicaciones, a saber:
