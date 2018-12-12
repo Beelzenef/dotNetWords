@@ -208,7 +208,6 @@ import { Routes, RouterModule } from '@angular/router';
 Crearemos un array de `Routes`, con el que redireccionaremos a diferentes componentes dependiendo de la URL que especifiquemos en nuestro navegador. Para ello, debemos importar también los componentes que vyaamos a usar.
 
 ```ts
-
 // Importamos los componentes que vayamos a usar
 import { AppComponent } from './components/app.component';
 import { StartComponent } from './components/start/start.component';
@@ -242,3 +241,15 @@ export class AppModule { }
 ```
 
 Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
+
+### Enlaces útiles
+
+* [Arquitectura de Angular](https://angular.io/guide/architecture)
+* [Hammer.js, _gestures_ en nuestras aplicaciones](https://github.com/hammerjs/hammer.js/)
+* [Angular + Electron](https://alligator.io/angular/electron/)
+* [¿Cómo hacer _deploy_ de nuestra app Angular en GitHub Pages?](https://alligator.io/angular/deploying-angular-app-github-pages/)
+* [Angular + ASP.NET Core](https://medium.com/@levifuller/building-an-angular-application-with-asp-net-core-in-visual-studio-2017-visualized-f4b163830eaa)
+
+---
+#### [Volver a inicio](../README.md)
+#### ← [Inicio ASP.NET Core](intro.md)
