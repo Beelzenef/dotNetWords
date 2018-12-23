@@ -242,6 +242,36 @@ export class AppModule { }
 
 Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
 
+## _Pipes_
+
+Las _pipes_ son mecanismos para formatear datos, valores de variables, en nuestra aplicación. Incluso de forma dinámica.
+
+Para nuestra clase Libro, queremos mostrar su fecha de publicación en nuestra . Las fechas son un buen ejemplo para mostrar el funcionamiento de las _pipes_, así que originalmente escribiríamos, para nuestra Clase:
+
+```ts
+pubDate = new Date(1988, 3, 15); 
+```
+
+Y en nuestro fichero HTML:
+
+```html
+<p>Esta novela se publicó en {{ pubDate }}</p>
+```
+
+El formato de la fecha es muy largo, poco legible y nada _friendly_. Usando las _pipes_ les vamos a dar un formato mucho más limpio y legible.
+
+```html
+<p>Esta novela se publicó en {{ pubDate | date }}</p>
+```
+
+Las _pipes_ pueden intercambiarse, existen de varios tipos e incluso pueden parametrizarse:
+
+```html
+<p>Esta novela se publicó en {{ pubDate | date:"MM/dd/yy" }}</p>
+```
+
+[Sigue leyendo en Angular.io](https://angular.io/guide/pipes)
+
 ### Enlaces útiles
 
 * [Arquitectura de Angular](https://angular.io/guide/architecture)
