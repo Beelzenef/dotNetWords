@@ -1,7 +1,7 @@
 
 # Clean Code, por Uncle Bob
 
-Existen muchos consejos para el desarrollo y programación de aplicaciones… y el tío Bob reúne muchos de ellos en su libro, en una lectura muy recomendable.
+Existen muchos consejos para el desarrollo y programación de aplicaciones… y Uncle Bob reúne muchos de ellos en su libro ["Clean Code: A Handbook of Agile Software Craftsmanship"](https://www.goodreads.com/book/show/3735293-clean-code), en una lectura muy recomendable.
 
 He aquí las lecciones más destacables y que podrían servir en el día a día cuando picamos código.
 
@@ -35,7 +35,7 @@ El código evoluciona, crece, pero los comentarios no. Si necesitas comentar, pu
 
 #### ¿Comentas?
 
-![](https://img.memesuper.com/8a1d5692ce5e8d53e6ea75e660a55b73_mulan-dishonor-meme-memesuper-dishonor-on-you-meme_336-200.gif)
+![](https://media.giphy.com/media/FOft9pT2HNYsw/giphy.gif)
 
 Hay "escuelas" que defienden con firmeza que comentar el código es algo malo... mientras que otras optan por un punto medio. 
 
@@ -92,8 +92,8 @@ Tenemos varios números mágicos a tener en cuenta:
 Sin efectos secundarios, sin acciones secundarias. La función *does one thing*. El nombre de la función podría incluso sugerir el orden de los parámetros.
 
 Si una función…
-… soluciona algo, es un command.
-… responde a algo, es un query
+* soluciona algo, es un command.
+* responde a algo, es un query.
 
 Pero no las dos cosas, establece bien la separación entre *command* y *query*.
 
@@ -103,11 +103,10 @@ Extrae los bloques de manejo de errores en una función:
 
 ```cs
 try { 
-	funcion(); 
-	}
-catch { 
-	funcionManejoErroes();
-	}
+	action(); 
+} catch { 
+	errorHandling();
+}
 ```
 
 ## Cuando tienes prisa...
@@ -153,7 +152,7 @@ Practica, practica, practica, siempre, cada día.
 
 Nombres explicativos, métodos para evitar números mágicos.
 
-Las diferencias entre nombres deben contar, hay que hacerlas notables. Busca nombres fácilmente pronunciables. Nombres fácilmente localizables, pues las referencias deben ser lógicas. Evita palabras reservadas por el sistema o el lenguaje, también las bromas privadas o el humor oculto. **(NdT: Eso va por ti, Python)**
+Las diferencias entre nombres deben contar, hay que hacerlas notables. Busca nombres fácilmente pronunciables. Nombres fácilmente localizables, pues las referencias deben ser lógicas. Evita palabras reservadas por el sistema o el lenguaje, también las bromas privadas o el humor oculto. **([NdT: Eso va por ti, Python](https://stackoverflow.com/questions/5033906/in-python-should-i-use-else-after-a-return-in-an-if-block))**
 
 *Say what you mean. Mean what you say.*
 
@@ -212,6 +211,6 @@ Sobre funciones
 * Parámetros *flag*.
 * Funciones muertas, código *zombie*. Los zombies solo te persiguen en la ficción.
 
-# this is, my friend, the end
+### _this is, my friend, the end_
 
 Y hasta aquí las lecciones más notables del tío Bob. Espero que sea útil en vuestro día a día como desarrolladorxs.

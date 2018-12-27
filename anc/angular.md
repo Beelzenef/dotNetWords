@@ -242,6 +242,46 @@ export class AppModule { }
 
 Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
 
+## Creando un servicio
+
+Lo ideal es tener un directorio para los servicios que vayamos a crear en nuestro directorio de `app`, para organizar así nuestro código.
+
+Las Clases que usemos como servicio llevan una notación en el nombre como convención, como ejemplo: nuestro servicio `gameController` estará en el fichero `game-controller.service.ts`.
+
+```ts
+// Imports hasta el infinito y más allá
+
+@Injectable()
+export class GameControllerService {
+    constructor(private router: Router) { }
+}
+```
+
+Es entonces cuando añadimos esta dependencia en el módulo sobre el que estamos operando:
+
+```ts
+@NgModule({
+  declarations: [
+    AppComponent,
+    StartComponent,
+    CharacterComponent,
+    FightComponent,
+    InventoryComponent,
+    StoryComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes)
+  ],
+  providers: [GameControllerService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+[Ejemplo en anAdventure](https://github.com/Beelzenef/anAdventure/commit/2d28271ea549b429c6ff2df3b38cab42b5f1e03b)
+
 ## _Pipes_
 
 Las _pipes_ son mecanismos para formatear datos, valores de variables, en nuestra aplicación. Incluso de forma dinámica.
