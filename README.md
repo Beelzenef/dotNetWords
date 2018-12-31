@@ -31,6 +31,7 @@ Curso de C# entre amigos
 * [Colecciones](general/colecciones.md)
 * C# + MySQL
 * OOP
+* [LINQ](general/linq.md)
 
 ### Para interfaces gráficas
 
