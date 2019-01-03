@@ -32,6 +32,7 @@ Curso de C# entre amigos
 * C# + MySQL
 * OOP
 * [LINQ](general/linq.md)
+* [MVVM](general/mvvm.md)
 
 ### Para interfaces gráficas
 
