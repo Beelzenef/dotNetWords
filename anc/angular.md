@@ -1,6 +1,6 @@
 # Angular
 
-Es un _framework_ para el desarrollo de aplicaciones web y de escritorio. Encuentra más información en [su sitio web](https://angular.io/). Encuentra ejemplos commit a commit en [mi GitHub](https://github.com/Beelzenef/anAdventure).
+Es un _framework_ para el desarrollo de aplicaciones web y de escritorio. Encuentra más información en [su sitio web](https://angular.io/). Encuentra ejemplos _commit_ a _commit_ en [anAdventure](https://github.com/Beelzenef/anAdventure), una aventura RPG alojada en GitHub.
 
 ## Instalación de NodeJS
 
@@ -18,7 +18,7 @@ Comprueba la instalación de NPM con:
 
 ## Instalación de AngularCLI
 
-Desde la terminal, para instalar:
+Desde una terminal y no desde el cliente de NodeJS escribe:
 
 `> npm install -g @angular/cli`
 
@@ -36,6 +36,15 @@ Por defecto, necesitarás acceder a la aplicación desde [http://localhost:4200]
 
 `> ng serve --port 4201`
 
+Si quieres "servir" la aplicación y abrir directamente el navegador, puedes escribir:
+
+`> ng serve --open`
+
+o
+
+`> ng serve -o`
+
+
 Cuando clonas un proyecto ya iniciado, en tu copia local necesitarás instalar la aplicación, así que una vez dentro del directorio de la misma, ejecuta:
 
 `> npm install`
@@ -52,7 +61,9 @@ Al momento de crear una aplicación con Angular, se te da a elegir el formato de
 
 ## Módulos en Angular
 
-En el proyecto creado, puedes encontrar módulos, como `src/app/app.module.ts`.
+En el proyecto creado, puedes encontrar módulos, como `src/app/app.module.ts`. Es la forma en la que se organiza la aplicación, de forma modular en unidades lógicas.
+
+![](https://pbs.twimg.com/media/CvGgsTAWAAIfvNA.jpg)
 
 Algunas Clases se pueden importar, asigándoles nombre que podemos usar en nuestra aplicación.
 
@@ -81,7 +92,7 @@ export class AppModule { }
 
 ## Componentes
 
-Son los fragmentos o páginas en nuestra aplicación.
+Son los fragmentos o páginas en nuestra aplicación. Pueden incluso anidarse, un componente que invoca a otro componente. Independientes o anidados, todos los que sean invocados deben estar declarados en el módulo, concretamente en el _array_ de `declarations` del fichero
 
 Un componente puede estar formado por tres ficheros. Si nos vamos a AppComponent encontraremos:
 
@@ -107,7 +118,17 @@ export class AppComponent {
 Del decorador de la Clase podemos destacar:
 
 * `selector`: que define en qué etiqueta se va a insertar el código que definamos en combinación con `app.component.ts` y `app.component.html`. Si buscamos en el fichero `index.html`, encontraremos la etiqueta `<app-root>`.
-* `templateUrl`: ¿dónde se va a insertar la lógica que escribamos para este componente?
+* `templateUrl` || `template`: ¿dónde se va a insertar la lógica que escribamos para este componente?
+  * Puede ser en un `template`, donde se va a dar todo el código HTML que necesitemos. Puede ser tan sencillo como una línea `<h1>{{title}}</h1>`, o más complejo con múltiples líneas. En este último caso, usaremos _backticks_ para englobar ese código:
+
+  ```html
+    `<div>
+        <h1>{{title}}</h1>
+    </div>
+    `
+  ```
+
+  * En caso de que necesitemos un fichero completo HTML, se especificará el `templateUrl` con la ruta relativa a ese fichero.
 * `styleUrls`: una lista o _array_ donde se buscarán los estilos a aplicar para el componente. Los estilos que se listan en este decorador solo se añaden a la aplicación cuando el componente está renderizado, por lo que no tiene por qué interferir con otros estilos de otros componentes.
 
 También podemos añadir:
@@ -118,9 +139,23 @@ En el cuerpo de la Clase que tenemos, añadiremos variables, propiedades, funcio
 
 ## _DataBinding_
 
-### _Interpollation_
+### _Interpolation_
 
 Es el modo más sencillo de hacer _dataBinding_ en nuestra aplicación. Se puede apreciar en nuestro componente inicial, al ver cómo nuestra variable `title`, que da nombre a la aplicación desde TS, se referencia y aplica en nuestro fichero HTML con `{{ title }}`. Es sencillo pero no permite mucha interactuación con el usuario.
+
+La _interpolation_ puede acoger tanto variables como operaciones matemáticas sencillas. Pueden ser tanto el valor de una _tag_ en HTML como el valor de uno de sus atributos:
+
+```html
+<h1>{{ title }}</h1>
+<h1 innerText={{ title }}></h1>
+```
+
+Como ejemplo de operacines sencillas, una muestra de código válido:
+
+```html
+<p>{{2 + 2}}</p>
+<p>{{cantidad + 2 }}</p>
+```
 
 #### _Expression context_
 
@@ -193,9 +228,7 @@ Para un _Component_ llamado _Start_ escribiríamos en nuestro fichero Typescript
 ```ts
 import { Component } from '@angular/core';
 
-@Component({
-
-})
+@Component({ })
 export class OneComponent { }
 ```
 
