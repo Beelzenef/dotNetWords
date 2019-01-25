@@ -121,6 +121,7 @@ Del decorador de la Clase podemos destacar:
 * `templateUrl` || `template`: ¿dónde se va a insertar la lógica que escribamos para este componente?
   * Puede ser en un `template`, donde se va a dar todo el código HTML que necesitemos. Puede ser tan sencillo como una línea `<h1>{{title}}</h1>`, o más complejo con múltiples líneas. En este último caso, usaremos _backticks_ para englobar ese código:
 
+
   ```html
     `<div>
         <h1>{{title}}</h1>
@@ -136,6 +137,39 @@ También podemos añadir:
 * `providers`: un _array_ de servicios e inyecciones que solo estarán disponibles para componentes específicos, y no para todo el módulo.
 
 En el cuerpo de la Clase que tenemos, añadiremos variables, propiedades, funciones... todo lo que necesitemos para nuestra aplicación.
+
+### Componentes anidados
+
+Un componente anidado es un componente que se renderiza dentro de otro. Para lograrlo, picamos nuestro primer componente, el que estará anidado:
+
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-nestedC',
+  template: '<p>Im a nested component!</p>',
+  styleUrls: ['./app.component.css']
+})
+export class NestedComponent { }
+}
+```
+
+Y de la siguiente forma, el componente que lo recoge o anida. Por simplicidad, utilizaremos `template` en lugar de `templateUrl`. Es tan simple como añadir a su código HTML el selector del componente que queramos añadir, como puede verse en el ejemplo:
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-first',
+  template: `<div>
+                <h1>First component</h1>
+                <app-nestedC></app-nestedC>
+            </div>`,
+  styleUrls: ['./app.component.css']
+})
+export class FirstComponent { }
+```
 
 ## _DataBinding_
 
@@ -215,7 +249,7 @@ import { FormsModule } from '@angular/forms'
 
 Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _bindear_ la variable `title` con la caja de texto. Si modificamos su contenido en la aplicación, comprobaremos que el títuloque se muestra en nuestra aplicación se cambia a tiempo real.
 
-```ts
+```html
 <input type="text" [(ngModel)]="title"/>
 ```
 
