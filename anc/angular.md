@@ -287,7 +287,7 @@ La declaración de estos métodos que funcionan como _handlers_ no requieren de 
 
 Es posible hacer _data binding_ de forma bidireccional. Para comprobar de forma sencilla, enlazaremos la variable del título de nuestra aplicación con una caja de texto, un `input` de tipo texto.
 
-Para ello, modificaremos el módulo del componente con el que trabajamos para añadir una dependiencia, `FormsModule`.
+Para ello, modificaremos el módulo en el que reside el componente con el que trabajamos para añadir una dependiencia, `FormsModule`.
 
 ```ts
 import { FormsModule } from '@angular/forms'
@@ -299,11 +299,31 @@ import { FormsModule } from '@angular/forms'
     FormsModule
 ```
 
-Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _bindear_ la variable `title` con la caja de texto. Si modificamos su contenido en la aplicación, comprobaremos que el títuloque se muestra en nuestra aplicación se cambia a tiempo real.
+Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _bindear_ la variable `title` con la caja de texto. Si modificamos su contenido en la aplicación, comprobaremos que el título que se muestra en nuestra aplicación se cambia a tiempo real.
 
 ```html
 <input type="text" [(ngModel)]="title"/>
 ```
+
+---
+
+Podemos entonces resumir el tema de _data binding_ en la siguiente imagen:
+
+![](https://cdn-images-1.medium.com/max/1600/0*LNoIkhlqQBqvlDJk.)
+
+## Mejorando la aplicación
+
+* Tipado fuerte mediante interfaces
+* Encapsulación de estilos
+* _Lifecycle hooks_
+* _Custom pipes_
+* _Nested components_
+
+### Tipado fuerte mediante interfaces
+
+### Hooks
+
+### Encapsulación de estilos
 
 ## _Angular routing_
 
@@ -339,7 +359,6 @@ const routes : Routes = [
     { path: "character", component: CharacterComponent },
     { path: "**", redirectTo: "" }
 ];
-
 
 @NgModule({
   declarations: [
@@ -423,13 +442,48 @@ El formato de la fecha es muy largo, poco legible y nada _friendly_. Usando las 
 <p>Esta novela se publicó en {{ pubDate | date }}</p>
 ```
 
-Las _pipes_ pueden intercambiarse, existen de varios tipos e incluso pueden parametrizarse:
+Las _pipes_ pueden concatenarse, existen de varios tipos e incluso pueden parametrizarse:
 
 ```html
 <p>Esta novela se publicó en {{ pubDate | date:"MM/dd/yy" }}</p>
+<p>Me costó {{ price | currency:'USD':'symbol':'1.2-2'}
 ```
 
+Hay muchos tipos de _pipes_, algunas definidas por el sistema y otras que podemos definir en nuestro código. Las _built-in_ son, entre otras, _lowercase_, _uppercase_, _date_, _currency_, _json_ (muy útil para _debugging_), _slice_...
+
+También es posible crear nuestras propias _pipes_. En un nuevo fichero, que seguirá la convención de `nombrePipe.pipe.ts`, escribiremos:
+
+```ts
+import { Pipe } from '@angular/core';
+
+@Pipe({ name: 'nombrePipe' })
+
+explort class nombrePipe implements PipeTransform { 
+  // Implementación del código de la interfaz
+  transform(value: string, character: string) : string {
+    return;
+  }
+}
+```
+
+Escribiendo este código también añadiremos en el camino el `import` que es necesario. Para poder compartir esta _pipe_, crearemos este fichero TS en el directorio `shared`, y lo añadiremos en nuestro módulo, dentro del array de `declarations`:
+
+```ts
+import { NombrePipe } from './shared/nombre-pipe.pipe'
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ...
+    NombrePipe 
+  ],
+...
+```
+
+
 [Sigue leyendo en Angular.io](https://angular.io/guide/pipes)
+
+No existen _pipes_ de filtrado o de ordenación, y [en la documentación de Angular nos explican el por qué. Debido a que ofrecen mala _performance_, no se proveen para desarrollar](https://angular.io/guide/pipes#appendix-no-filterpipe-or-orderbypipe).
 
 ### Enlaces útiles
 
