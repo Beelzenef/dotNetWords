@@ -29,16 +29,16 @@ List<string> listaNombres = new List<string>(10);
 
 La lista de los métodos más frecuentes en el uso de la Clase List:
 
-* Add(T), añade al final de la lista el elemento especificado como parámetro.
-* Clear(), limpia la lista, eliminando todos los elementos.
-* Contains(T), devuelve el índice, la posición, de la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.
-* IndexOf(T), devuelve el índice, la posición, de la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.
-* LastIndexOf(T), devuelve el índice, la posición, de la última ocurrencia del elemento a buscar, que se especifica en el parámetro.
-* Remove(T), elimina la primera ocurrencia o aparición del dato especificado como parámetro.
-* RemoveAt(int), que elimina el dato que se encuentra en la posición que se deterima en el parámetro.
+* `Add(T)`, añade al final de la lista el elemento especificado como parámetro.
+* `Clear()`, limpia la lista, eliminando todos los elementos.
+* `Contains(T)`, devuelve el índice, la posición, de la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.
+* `IndexOf(T)`, devuelve el índice, la posición, de la primera ocurrencia del elemento a buscar, que se especifica en el parámetro.
+* `LastIndexOf(T)`, devuelve el índice, la posición, de la última ocurrencia del elemento a buscar, que se especifica en el parámetro.
+* `Remove(T)`, elimina la primera ocurrencia o aparición del dato especificado como parámetro.
+* `RemoveAt(int)`, que elimina el dato que se encuentra en la posición que se deterima en el parámetro.
 * RemoveRange(int, int), elimina todos los elementos en el rango especificado en los dos parámetros.
-* Reverse(), invierte todos los elementos en la lista.
-* Sort(), ordena todos los elementos bajo un criterio por defecto. Para listas con datos complejos, hay que especificar nuevos criterios.
+* `Reverse()`, invierte todos los elementos en la lista.
+* `Sort()`, ordena todos los elementos bajo un criterio por defecto. Para listas con datos complejos, hay que especificar nuevos criterios.
 
 ## Listas con tipos complejos
 
@@ -60,3 +60,32 @@ string nombreDePersonajeDos = listaPersonajes[1].Nombre;
 ```
 
 Y ahora el contenido de esta nueva variable es `Tirsa Ventar`, porque hemos seleccionado el segundo personaje de la lista y tomado el valor de su Propiedad Nombre.
+
+## Operando con listas
+
+### Método `ConvertAll()`
+
+```cs
+class First
+{
+    int id;
+    string description;
+    DateTime creation;
+}
+
+class Second
+{
+    int id;
+    string fullInfo;
+}
+
+// moar código
+
+List<First> firstList = new List();
+List<Second> secondList;
+firstList.AddRange(fictionalData);
+secondList = firstList.ConvertAll(item => new Second {
+    id = item.id,
+    fullInfo = item.description + " " + item.creation.Year 
+} );
+```
