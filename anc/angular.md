@@ -171,6 +171,46 @@ import { Component } from '@angular/core';
 export class FirstComponent { }
 ```
 
+Un componente solo se puede anidar si:
+
+* su _template_ solo maneja un fragmento de una 
+vista mayor.
+* tiene un selector
+* se comunica con su contenedor
+
+Para comunicar dos componentes que forman una estructura contenedor-anidado, usamos el decorador `@Input`, con el que podremos recibir en un componente datos de su contenedor.
+
+Para utilizar este decorador, modifica una propiedad en el componente anidado para especificar:
+
+```ts
+@Input() propiedadComunicada: string;
+```
+
+Y en el contenedor haremos referencia a esta propiedad que acabamos de modificar, desde el mismo punto donde añadimos el selector del componente anidado:
+
+```html
+<div>
+  <h1>First component</h1>
+  <app-nestedC [propiedadComunicada]='modelo.cualquierValor'>
+    </app-nestedC>
+</div>
+```
+
+Para que el componente anidado responda a los valores que se le asignan en cada llamada, es necesario acudir al ciclo de vida de la aplicación, y añadir el evento de `onChanges()`:
+
+```ts
+export class NestedComponent implements OnChanges {
+  
+  @Component({
+    // elementos de un componente
+  })
+  ngOnChanges(): void {
+    // código a ejecutar cuando
+    // se perciben cambios
+  }
+}
+```
+
 ## _DataBinding_
 
 ### _Interpolation_
@@ -483,7 +523,9 @@ import { NombrePipe } from './shared/nombre-pipe.pipe'
 
 [Sigue leyendo en Angular.io](https://angular.io/guide/pipes)
 
-No existen _pipes_ de filtrado o de ordenación, y [en la documentación de Angular nos explican el por qué. Debido a que ofrecen mala _performance_, no se proveen para desarrollar](https://angular.io/guide/pipes#appendix-no-filterpipe-or-orderbypipe).
+No existen _pipes_ de filtrado o de ordenación, y [en la documentación de Angular nos explican el por qué. Debido a que ofrecen mala _performance_, no se proveen para desarrollar este tipo de componentes](https://angular.io/guide/pipes#appendix-no-filterpipe-or-orderbypipe).
+
+---
 
 ### Enlaces útiles
 
