@@ -422,43 +422,62 @@ Por último, modificaremos nuestro fichero `index.html` para eliminar todo el c�
 
 ## Creando un servicio
 
+Un servicio es una Clase que tiene un propósito concreto, y que además: es independiente de cualquier componente, encapsula interacciones externas a los componentes y provee de una lógica o datos que se comparten por toda la aplicación.
+
+Registrar servicios en Angular consiste en crear `Singletons`, es decir, instancias únicas que son accesibles desde cualquier parte de la aplicación. Y para ello los inyectamos.
+
+Las dependencias de servicios, y las inyecciones para los mismos, se especifican en los constructores de los componentes que los vayan a utilizar.
+
+
+
 Lo ideal es tener un directorio para los servicios que vayamos a crear en nuestro directorio de `app`, para organizar así nuestro código.
 
-Las Clases que usemos como servicio llevan una notación en el nombre como convención, como ejemplo: nuestro servicio `gameController` estará en el fichero `game-controller.service.ts`.
+Las Clases que usemos como servicio llevan una notación en el nombre como convención, como ejemplo:
 
 ```ts
 // Imports hasta el infinito y más allá
 
+@Injectable()
+export class NewService { }
+```
+
+Podemos ver en nuestro servicio `gameController` estará en el fichero `game-controller.service.ts`.
+
+```ts
 @Injectable()
 export class GameControllerService {
     constructor(private router: Router) { }
 }
 ```
 
-Es entonces cuando añadimos esta dependencia en el módulo sobre el que estamos operando:
+Podemos inyectar servicios a nivel de componente, donde sólo será accesible desde el mismo, y teniendo que repetir el proceso cada vez que necesitemos ese servicio. Si seguimos este método, tendremos que añadir la dependencia en el módulo sobre el que estamos operando:
 
 ```ts
 @NgModule({
   declarations: [
-    AppComponent,
-    StartComponent,
-    CharacterComponent,
-    FightComponent,
-    InventoryComponent,
-    StoryComponent
+    ...
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [GameControllerService],
+  providers: [NewService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
 
+... y después inyectar en el constructor del componente.
+
 [Ejemplo en anAdventure](https://github.com/Beelzenef/anAdventure/commit/2d28271ea549b429c6ff2df3b38cab42b5f1e03b)
+
+Este escenario no siempre es el ideal, por eso podemos crear, como recomendación desde Angular 6, un registro de servicio a nivel global. Para registrar a nivel global simplemente tendremos que:
+
+```ts
+@Injectable({ providedIn: 'root' })
+export class NewService { }
+```
 
 ## _Pipes_
 
