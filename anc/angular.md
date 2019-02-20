@@ -505,7 +505,7 @@ Las _pipes_ pueden concatenarse, existen de varios tipos e incluso pueden parame
 
 ```html
 <p>Esta novela se publicó en {{ pubDate | date:"MM/dd/yy" }}</p>
-<p>Me costó {{ price | currency:'USD':'symbol':'1.2-2'}
+<p>Me costó {{ price | currency:'USD':'symbol':'1.2-2' }}
 ```
 
 Hay muchos tipos de _pipes_, algunas definidas por el sistema y otras que podemos definir en nuestro código. Las _built-in_ son, entre otras, _lowercase_, _uppercase_, _date_, _currency_, _json_ (muy útil para _debugging_), _slice_...
