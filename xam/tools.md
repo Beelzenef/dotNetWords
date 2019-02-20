@@ -18,4 +18,4 @@ Aquí se listan libros y también herramientas útiles para el desarrollo con Xa
 
 ---
 #### [Volver a inicio](../README.md)
-#### ← [Inicio Xamarin](intro.md)
+#### ← [Introducción Xamarin](intro.md)

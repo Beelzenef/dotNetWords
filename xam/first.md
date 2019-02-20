@@ -27,4 +27,4 @@ En C#:
 
 ---
 #### [Volver a inicio](../README.md)
-#### ← [Inicio Xamarin](intro.md)
+#### ← [Introducción Xamarin](intro.md)
