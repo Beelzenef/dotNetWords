@@ -12,7 +12,7 @@ A tener en cuenta para elegir WPF:
 
 La disposición ideal del IDE depende, como siempre, de gustos y/o necesidades. La pantalla partida de forma horizontal permite navegar de forma sencilla en el codigo XAML para ver cómo la interfaz gráfica cambia en tiempo real. Si sientes que te falta espacio en horizontal... no temas en saltar de línea para seguir añadiendo atributos al elemento XML con el que estés operando. No solo será más cómodo a la hora de visualizarlo, y así evitar cambios constantes, si no que te puede ayudar a tener criterios y ordenación de los atributos.
 
-![](https://www.intersoftsolutions.com/Support/PremierStudio/Tutorial/images/WebUIExistingWPF1.png)
+![WPF IDE](https://www.intersoftsolutions.com/Support/PremierStudio/Tutorial/images/WebUIExistingWPF1.png)
 
 * XAML simplifica el código:
 

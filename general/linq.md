@@ -6,7 +6,7 @@ Puedes pedir datos de cualquier fuente que implemente la interfaz IEnumerable.
 
 La sintaxis de cualquier consulta es:
 
-```
+```cs
 from <variable names> in <data source> select <variable names>
 ```
 
@@ -18,7 +18,7 @@ Ejemplo:
 IQueryable<Employee> emps = from e in Employeesselect e;
 ```
 
-El tipo de dato que se devuelve, en este caso, es un IQueryable<Employee>, por lo que te permite iterar a través de los datos que has recibido.
+El tipo de dato que se devuelve, en este caso, es un `IQueryable<Employee>`, por lo que te permite iterar a través de los datos que has recibido.
 
 ## Filtrando datos por filas
 
@@ -64,7 +64,7 @@ private void FilteringDataByColumn()
 Jugando con los resultados, que se pueden recorrer mediante un bucle FOREACH
 
 ```cs
-// Accessing the Returned Data 
+// Accessing the Returned Data
 foreach (var emp in emps)
 {
     Console.WriteLine("{0} {1}", emp.FirstName, emp.LastName);
@@ -89,7 +89,7 @@ var emps = from e in Employees
 var emps = from e in Employees
 select new
 {
-	FirstName = e.FirstName, LastName = e.LastName, Job = e.JobTitle1.Job
+    FirstName = e.FirstName, LastName = e.LastName, Job = e.JobTitle1.Job
 };
 ```
 
@@ -122,7 +122,7 @@ Devuelve un array. Si no se encuentran coincidencias, producirá un array vacío
 
 ### Left Outer JOIN
 
-Todos los eleentos de la izquierda se devuelven, incluso si no tiene elementos coincidentes con la tabla de la derecha. 
+Todos los eleentos de la izquierda se devuelven, incluso si no tiene elementos coincidentes con la tabla de la derecha.
 
 ```cs
 var leftOuterJoinQuery =
@@ -134,7 +134,8 @@ var leftOuterJoinQuery =
 
 ## Enlaces útiles
 
-* [Aplicando LINQ a DbSets<Type>](https://www.learnentityframeworkcore.com/dbset/querying-data)
+* [Aplicando LINQ a `DbSets<Type>`](https://www.learnentityframeworkcore.com/dbset/querying-data)
 
 ---
-#### [Volver a inicio](../README.md)
+
+### [Volver a inicio](../README.md)

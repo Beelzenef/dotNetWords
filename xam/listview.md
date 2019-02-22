@@ -1,6 +1,6 @@
 # Creando ListView
 
-### Estructura MVC
+## Estructura MVC
 
 Crearemos directorios para:
 
@@ -139,10 +139,13 @@ public App()
 }
 
 ```
+
 ---
 
 Puedes ver este código, en un solo _commit_, en [mi proyecto en XSM](https://github.com/Beelzenef/XSM/commit/1a27b92bdbf1b6ce7c7ff7fe3856656d43f9fe2e).
 
 ---
+
 #### [Volver a inicio](../README.md)
+
 #### ← [Introducción Xamarin](intro.md)

@@ -4,7 +4,7 @@
 
 ASP.NET Core crea sus aplicaciones con el modelo MVC, dividiendo el código en Vistas, Modelos y Controladores.
 
-![](https://i0.wp.com/www.credosystemz.com/course-content/2018/04/MVC-Structure.png?resize=500%2C300&ssl=1)
+![MVC structure](https://i0.wp.com/www.credosystemz.com/course-content/2018/04/MVC-Structure.png?resize=500%2C300&ssl=1)
 
 ## Conocimientos previos
 
@@ -31,4 +31,5 @@ Y complementando:
 * [ASP.NET Core - Beginner in MVA (vídeo)](https://youtu.be/xc3Gl4rnWV4)
 
 ---
+
 #### [Volver a inicio](../README.md)

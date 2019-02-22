@@ -23,13 +23,13 @@ Y aquí una lista de los tipos existentes, que se irán conociendo a lo largo de
 Datos por valor:
 
 * Enteros
-  - Byte (byte)
-  - Sbyte (sbyte)
-  - Short (short)
-  - Ushort (ushort)
-  - Integer (int)
-  - Uinteger (uint)
-  - Long (long)
+  * Byte (byte)
+  * Sbyte (sbyte)
+  * Short (short)
+  * Ushort (ushort)
+  * Integer (int)
+  * Uinteger (uint)
+  * Long (long)
 * Char (char)
 * Reales
 * Flotantes (float)
@@ -50,7 +50,7 @@ Tipos por referencia:
 Los tipos de datos por valor, trabajan con copias de esos datos.
 Los tipos de datos por referencia, mantiene los cambios por métodos.
 
-O mejor, para una [referencia visual](https://twitter.com/FrancescoC/status/738490412441145344/photo/1). 
+O mejor, para una [referencia visual](https://twitter.com/FrancescoC/status/738490412441145344/photo/1).
 
 Los datos por valor, al ser pasados a métodos, se utilizan copias de esos datos.
 Los datos por referencia es como coger ese mismo dato para modificarlo, estás referenciando al dato para operar sobre él.

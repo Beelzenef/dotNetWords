@@ -25,11 +25,11 @@ Instantáneamente se creará esta estructura.
 
 ```cs
 /// <summary>
-/// 
+///
 /// </summary>
 static void Probando() {
   ...
 }
 ```
 
-Dentro de las etiquetas XML ``` <summary>``` debe ir el resumen, la explicación del método Probando(). Si creamos nuevas líneas de estos comentarios de documentación, y abrimos una nueva etiqueta (escribiendo <) podemos añadir otras etiquetas, como por ejemplo ``` <returns>```, para explicar qué devuelve el método.
+Dentro de las etiquetas XML ```<summary>``` debe ir el resumen, la explicación del método Probando(). Si creamos nuevas líneas de estos comentarios de documentación, y abrimos una nueva etiqueta (escribiendo <) podemos añadir otras etiquetas, como por ejemplo ```<returns>```, para explicar qué devuelve el método.

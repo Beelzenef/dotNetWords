@@ -2,7 +2,7 @@
 
 List es una Clase que representa a una colección de un tipo de dato concreto. Es dinámica, por lo que se adaptará a medida que la vayas llenando o quizás eliminando su contenido.
 
-En esta Clase conoceremos la convencion `T`, ya sea entre `<>` o no, que será bastante común en la documentación de C#. Se refiere a un tipo de dato, al tipo de dato con el que es construido y que vivirá en toda la instancia. 
+En esta Clase conoceremos la convencion `T`, ya sea entre `<>` o no, que será bastante común en la documentación de C#. Se refiere a un tipo de dato, al tipo de dato con el que es construido y que vivirá en toda la instancia.
 
 ## Constructores
 
@@ -36,7 +36,7 @@ La lista de los métodos más frecuentes en el uso de la Clase List:
 * `LastIndexOf(T)`, devuelve el índice, la posición, de la última ocurrencia del elemento a buscar, que se especifica en el parámetro.
 * `Remove(T)`, elimina la primera ocurrencia o aparición del dato especificado como parámetro.
 * `RemoveAt(int)`, que elimina el dato que se encuentra en la posición que se deterima en el parámetro.
-* RemoveRange(int, int), elimina todos los elementos en el rango especificado en los dos parámetros.
+* `RemoveRange(int, int)`, elimina todos los elementos en el rango especificado en los dos parámetros.
 * `Reverse()`, invierte todos los elementos en la lista.
 * `Sort()`, ordena todos los elementos bajo un criterio por defecto. Para listas con datos complejos, hay que especificar nuevos criterios.
 
@@ -86,6 +86,6 @@ List<Second> secondList;
 firstList.AddRange(fictionalData);
 secondList = firstList.ConvertAll(item => new Second {
     id = item.id,
-    fullInfo = item.description + " " + item.creation.Year 
+    fullInfo = item.description + " " + item.creation.Year
 } );
 ```

@@ -7,7 +7,7 @@ La única excepción se encuentra en los métodos que devuelven void, es decir, 
 Como Main() es un método, las funciones han de ser escritas fuera de Main pero dentro de la Clase que tengamos.
 
 Toda función puede recibir parámetros, desde cero a infinitos, que se especifican en la firma. Todas las funciones nombres que los identifican.
- 
+
 Las funciones se crean para tareas concretas, lo más concretas posibles, aunque también existen las más generales. Siempre deben cumplir el devolver un valor.
 La programación estructurada y lo más adaptable posible no muestra datos directamente por pantalla, pues genera dependencia de la consola y no sirve para interfaz gráfica (Windows Forms).
 
@@ -17,7 +17,7 @@ Las funciones constan de tres partes:
 
 * Documentación (explicación).
 * Declaración (firma).
-* Definición (código). 
+* Definición (código).
 
 Para codificar una función, necesitamos:
 
@@ -32,11 +32,11 @@ Un ejemplo de una función con dos parámetros, no estática (de instancia) y p�
 ```cs
 public int SumaDePares(int x, int y)
 {
-	if (x % 2 == 0 && y % 2 == 0)
-	{
-		return x + y;
-	}
-	return 1;
+    if (x % 2 == 0 && y % 2 == 0)
+    {
+        return x + y;
+    }
+    return 1;
 }
 ```
 

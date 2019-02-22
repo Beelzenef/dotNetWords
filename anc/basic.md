@@ -24,7 +24,7 @@ UseStartup<Startup>();
 
 * Clase Startup
 
-La Clase Startup es donde se definen los servicios a utilizar por la aplicación así como el _middleware_. 
+La Clase Startup es donde se definen los servicios a utilizar por la aplicación así como el _middleware_.
 
 El constructor recibe una instancia de `IConfiguration`. Interactuará con las fuentes de configuración, sustituye a _webconfig_ de forma opcional.
 
@@ -53,5 +53,7 @@ services.AddScoped<IServicio, ClaseServicio>();
 ```
 
 ---
-#### [Volver a inicio](../README.md)
-#### ← [Inicio ASP.NET Core](intro.md)
+
+## [Volver a inicio](../README.md)
+
+## ← [Inicio ASP.NET Core](intro.md)

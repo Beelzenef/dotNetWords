@@ -4,7 +4,7 @@ Queue es una Clase que representa a una colección de un tipo de dato concreto c
 
 El comportamiento concreto es el de cola, una **queue**, donde el primero que entra es el primero que sale.
 
-En esta Clase utiliza también utiliza la convención `T`, para referirse a un tipo de dato, al tipo de dato con el que es construido y que vivirá en toda la instancia. 
+En esta Clase utiliza también utiliza la convención `T`, para referirse a un tipo de dato, al tipo de dato con el que es construido y que vivirá en toda la instancia.
 
 ## Constructores
 

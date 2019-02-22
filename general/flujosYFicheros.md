@@ -10,7 +10,7 @@ Debido a la gran cantidad de operaciones que se pueden realizar con ficheros, di
 using System.IO;
 ```
 
-### Pero antes de empezar... ¿qué es un flujo?
+## Pero antes de empezar... los flujos
 
 Un flujo es el modo en que C#, o la plataforma .NET, gestionan los ficheros. Son zonas de memoria de diferentes tipos, porque pueden ser texto en forma de cadenas de texto o contenido binario, que permiten entrada y salida.
 
@@ -34,11 +34,13 @@ Es una clase estática, y por tanto con miembros estáticos, que basa en instanc
 Esta Clase NO trabaja con ficheros, solo establece rutas en el sistema de ficheros del sistema operativo. Y dependiendo de con cual trabajes, tiene algunos miembros para adaptar el código al sistema operativo. También es importante recordar que las rutas a ficheros o directorios dentro de strings pueden tener carácteres interpretables que podrían hacer fallar la gestión de directorios concretos... es por ello que podemos manifestar que un string no sea interpretado, que solo sea un literal de texto. ¿Cómo? Con esta pequeña modificación:
 
 String normal:
+
 ```cs
 string ruta1 = "dir2/dir3/dir4";
 ```
 
 String literal:
+
 ```cs
 string literal = @"/dir1/dir2";
 ```
@@ -52,6 +54,7 @@ string ruta;
 char separadorRutas = Path.DirectorySeparatorChar;
 ruta = separador + "datos" + separador + "ficherito.dat";
 ```
+
 PathSeparator, un caracter que separa rutas entre ellas, por lo general el semicolon ';'.
 
 VolumeSeparatorChar, que es el separador de unidades lógicas, que dependerá de la raíz del sistema operativo.
@@ -65,15 +68,15 @@ string rutaFichero = @"C:\imagenes\unaImagen.jpg";
 
 if (System.IO.Path.GetExtension(rutaFichero) == ".jpg")
 {
-                  Console.WriteLine("¡El fichero es una imagen!");   
+    Console.WriteLine("¡El fichero es una imagen!");
 }
 ```
+
 GetFullPath(), recibe una ruta a un fichero o directorio y devuelve la ruta completa de un fichero o directorio, que puede ser usada como ruta absoluta para operaciones varias.
 
 ChangeExtension(), recibe una ruta a un fichero y la extensión a la que quieres cambiar, devolviendo una cadena con la extension cambiada en el fichero.
 
 GetDirectoryName(), recibe una ruta a un fichero o directorio y devuelve el nombre del directorio en el cual este elemento que recibe está contenido.
-
 
 ### Clases para ficheros
 
@@ -96,4 +99,5 @@ AppendText
 CreateText
 
 ### Clases para directorios
+
 ### Flujos

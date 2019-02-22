@@ -56,6 +56,7 @@ Sobre un botón:
   </ContextMenu>
 </Button.ContextMenu/>
 ```
+
 ## CheckBox
 
 El control de `CheckBox` es aquel que nos permite marcar una casilla con un texto asociado.
@@ -63,17 +64,21 @@ El control de `CheckBox` es aquel que nos permite marcar una casilla con un text
 ```xml
  <CheckBox>Me gusta leer</CheckBox>
 ```
+
 Cuando inicia la aplicación, algunas de las opciones necesitan estar marcadas. Una opción habilitada por defecto. Para especificarlo, acudiremos a la Propiedad `IsChecked` que admite valores *booleanos*.
 
 ```xml
  <CheckBox IsChecked="True">Me gusta la ciencia ficción</CheckBox>
 ```
+
 Este control también permite una particularidad que se conoce como tercer estado o *third state*. Hemos comentado que admite valores *booleanos*, pero también valores `null`. Es un estado indeterminado, ni marcado ni sin marcar. Podemos interpretarlo como el estado que tiene este control cuando todavía no ha recibido ninguna operación, nunca ha sido cambiado de valor.
 
 Se marca con la Propiedad `IsThreeState`, que se marca como *booleano* a su vez. Así, puede tener el tercer estado, y podrá tomar valores `null`. Como en el ejemplo:
+
 ```xml
  <CheckBox IsThreeState="True" IsChecked="{x:Null}">Me gusta la ciencia ficción</CheckBox>
 ```
+
 El valor de la Propiedad `IsChecked` es diferente. Está entre `{}` y además muestra una sintaxis adicional. Significa que es un valor interpretable por el sistema, no se toma como un literal. Los valores `null` se especifican de este modo en WPF.
 
 ## ComboBox
@@ -85,7 +90,7 @@ Para crear una lista desplegable vacía:
 ```xml
  <ComboBox/>
  ```
- 
+
 Obviamente necesitaremos contenido que mostrar en esa lista desplegable, y para eso necesitaremos elementos de tipo lista. Esos elementos son `ComboBoxItem`, y podemos declarar tantos como necesitemos.
 
 ```xml
@@ -95,19 +100,19 @@ Obviamente necesitaremos contenido que mostrar en esa lista desplegable, y para 
   <ComboBoxItem>Dune</ComboBoxItem>
  </ComboBox>
  ```
- 
- ## ListBox
- 
+
+## ListBox
+
  No siempre necesitaremos listas desplegables, si no listas normales, una caja con diferentes elementos para diferentes propósitos. Para eso, usaremos el control `ListBox`.
- 
+
  Para crer una lista, vacía:
- 
+
  ```xml
  <ListBox/>
  ```
- 
+
  Para añadir contenido, igual que con `ComboBox`, necesitaremos elementos específicos. En esta ocasión usaremos los `ListBoxItem`, y aquí el ejemplo con una lista de libros.
- 
+
  ```xml
  <ListBox>
   <ListBoxItem>Alas de fuego</ListBoxItem>

@@ -6,15 +6,15 @@ Es el patrón recomendado para todas las plataformas que usan XAML. Consta de tr
 * Modelos
 * _ViewModels_ o Modelos de la Vista
 
-![](https://cdn-images-1.medium.com/max/1600/1*BpxMFh7DdX0_hqX6ABkDgw.png)
+![MVC](https://cdn-images-1.medium.com/max/1600/1*BpxMFh7DdX0_hqX6ABkDgw.png)
 
 Estos tres elementos pueden definirse como:
 
-- La Vista es la interfaz del usuario en nuestra aplicación.
-- Los Modelos son Clases que representan el dominio de la aplicación.
-- El _ViewModel_ es una abstracción de la Vista, exponiendo propiedes o Comandos para comunicarse con la Vista, adapta un Modelo para que lo use la Vista.
+* La Vista es la interfaz del usuario en nuestra aplicación.
+* Los Modelos son Clases que representan el dominio de la aplicación.
+* El _ViewModel_ es una abstracción de la Vista, exponiendo propiedes o Comandos para comunicarse con la Vista, adapta un Modelo para que lo use la Vista.
 
-### Ventajas
+## Ventajas
 
 * Desacoplamiento
 * Facilidades para _unit tests_
@@ -41,11 +41,11 @@ using System.Windows.Input;
 
 namespace Bookis.Core.ViewModel {
     public class BookDetailViewModel : NotificationObject {
-        
+
         private string title;
         public string Title {
             get { return title; }
-            set { 
+            set {
                 if (title == value) return;
                 title = value;
                 OnPropertyChanged();
@@ -55,7 +55,7 @@ namespace Bookis.Core.ViewModel {
         private DateTime pubDate;
         public DateTime PubDate {
             get { return pubDate; }
-            set { 
+            set {
                 if (pubDate == value) return;
                 pubDate = value;
                 OnPropertyChanged();
@@ -65,7 +65,7 @@ namespace Bookis.Core.ViewModel {
         private string genre;
         public string Genre {
             get { return genre; }
-            set { 
+            set {
                 if (genre == value) return;
                 genre = value;
                 OnPropertyChanged();
@@ -75,7 +75,7 @@ namespace Bookis.Core.ViewModel {
         private ObservableCollection<string> genres;
         public ObservableCollection<string> Genres {
             get { return genres; }
-            set { 
+            set {
                 if (genres == value) return;
                 genres = value;
                 OnPropertyChanged();
@@ -104,27 +104,27 @@ La Vista, junto a `commands`, se detallaría así:
              x:Class="Bookis.Core.BookDetailView"
              Title="Nuevo libro">
 <ContentPage.Resources>
-	<ResourceDictionary>
-  		<viewModels:BookDetailViewModel x:Key="BookDetailViewModel"/>	
+    <ResourceDictionary>
+        <viewModels:BookDetailViewModel x:Key="BookDetailViewModel"/>
   </ResourceDictionary>
 </ContentPage.Resources>
   
   <Grid Margin="10" BindingContext="{Bindig Source={StaticResource BookDetailViewModel}}">
     <Grid.RowDefinitions>
-    	<RowDefinition/>
+        <RowDefinition/>
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
-    
+
     <StackLayout>
-    	<Label Text="Titulo"/>
-      	<Entry Text="{Binding Title, Mode=TwoWay}"/>
-      	<Label Text="Fecha de publicacion"/>
-      	<DatePicker Date="{Binding PubDate, Mode=TwoWay}"/>
-      	<Label Text="Género"/>
-      	<Grid>
-      		<Grid.ColumnDefinitions>
-          		<ColumnDefinition/>
-              	<ColumnDefinition Width="Auto"/>
+        <Label Text="Titulo"/>
+            <Entry Text="{Binding Title, Mode=TwoWay}"/>
+            <Label Text="Fecha de publicacion"/>
+            <DatePicker Date="{Binding PubDate, Mode=TwoWay}"/>
+            <Label Text="Género"/>
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
           </Grid.ColumnDefinitions>
           <Label Text="{Binding Genre}" />
           <Button Grid.Column="1" Text="..." Command="{Binding SelectGenreCommand}"/>
@@ -134,5 +134,7 @@ La Vista, junto a `commands`, se detallaría así:
   </Grid>
 </ContentPage>
 ```
+
 ---
-#### [Volver a inicio](../README.md)
+
+### [Volver a inicio](../README.md)

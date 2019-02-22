@@ -2,7 +2,7 @@
 
 Si, como es mi caso, llegas a WPF después de haber aprendido el arte de Windows Forms... esta sección es para ti.
 
-La búsqueda de equivalencias es algo natural, es como finalmente nos adaptamos a nuevos entornos. Pero entre WPF y Windows Forms no siempre es posible. Pero no todo está perdido, ¡busca tu equivalencia perdida y sigue programando! 
+La búsqueda de equivalencias es algo natural, es como finalmente nos adaptamos a nuevos entornos. Pero entre WPF y Windows Forms no siempre es posible. Pero no todo está perdido, ¡busca tu equivalencia perdida y sigue programando!
 
 ## OpenFileDialog
 
@@ -16,7 +16,7 @@ using Microsoft.Win32;
 
 Y si estamos trabajando con ficheros, probablemente necesitaremos también a System.IO.
 
-Pero vamos a crear nuestra instancia de OpenFileDialog, que puede estar inicializada en, por ejemplo, el lanzamiento de la interfaz gráfica. Podemos especificar un filtro para el fichero, y así poder seleccionar solo los que se ajusten a esa extensión. Para evitar errores en el futuro, especifica siempre un filtro de ficheros. Para ficheros de texto, en extensión TXT: 
+Pero vamos a crear nuestra instancia de OpenFileDialog, que puede estar inicializada en, por ejemplo, el lanzamiento de la interfaz gráfica. Podemos especificar un filtro para el fichero, y así poder seleccionar solo los que se ajusten a esa extensión. Para evitar errores en el futuro, especifica siempre un filtro de ficheros. Para ficheros de texto, en extensión TXT:
 
 ```cs
 OpenFileDialog buscadorFicheros = new OpenFileDialog();

@@ -11,7 +11,7 @@ int num = 3;
 double resultado = 0;
 ```
 
-### Clase Convert, cogiendo la variable "num" y convirtiendo a tipo *double*:
+## Clase Convert, cogiendo la variable "num" y convirtiendo a tipo *double*
 
 En CSharp:
 
@@ -20,7 +20,7 @@ int num = 3;
 resultado = Convert.ToDouble(num);
 ```
 
-### Casting o casteo, casteando la variable "num" a tipo *double*:
+## Casting o casteo, casteando la variable "num" a tipo *double*
 
 En CSharp:
 
@@ -36,7 +36,7 @@ int num = 3;
 resultado = (double)num;
 ```
 
-### Método Parse, parseando de la variable "num" a tipo *double*:
+## Método Parse, parseando de la variable "num" a tipo *double*
 
 En CSharp:
 
@@ -52,9 +52,10 @@ int num = 3;
 resultado = Double.ParseDouble(num);
 ```
 
-### Método ToString(), tomando la variable "num" y convirtiendo a tipo *string*, siendo solo texto:
+## Método ToString(), tomando la variable "num" y convirtiendo a tipo *string*, siendo solo texto
 
 En CSharp:
+
 ```cs
 int num = 3;
 string texto;

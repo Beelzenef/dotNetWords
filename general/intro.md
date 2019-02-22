@@ -9,17 +9,17 @@ Tanto el pseudocódigo como los diagramas de flujo son herramientas en nuestras 
 
 Un ejemplo de DFD:
 
-![](http://4.bp.blogspot.com/-515O6ynwUok/VXQNVA_La0I/AAAAAAAAAz4/6alsXOu3XDw/s1600/Ejemplo%2Bordinograma.JPG)
+![Ordinograma](http://4.bp.blogspot.com/-515O6ynwUok/VXQNVA_La0I/AAAAAAAAAz4/6alsXOu3XDw/s1600/Ejemplo%2Bordinograma.JPG)
 
 Y un ejemplo de Pseudocódigo:
 
-![](http://3.bp.blogspot.com/-uCEFCkIVhFU/VkXv31Vdy3I/AAAAAAAAABM/nLu2fvc5a0A/s640/pic2.png)
+![Pseudocode](http://3.bp.blogspot.com/-uCEFCkIVhFU/VkXv31Vdy3I/AAAAAAAAABM/nLu2fvc5a0A/s640/pic2.png)
 
 También llamados ordinogramas. Es una forma gráfica de representar un algoritmo, utilizando símbolos, desde principio a fin con instrucciones y recursos. Se utilizan símbolos estandarizados.
 Todos los elementos de un ordinograma están unidos por flechas que indican la dirección del flujo. No puede haber una fecha que no apunte a ninguna parte. Todas las flechas siguen ángulos rectos y nunca hacen conexiones laterales.
 Se inicia en el Inicio y todo ha de acabar en el Fin. No puede haber un flujo perdido, todo ha de acabar en el flujo principal.
 
-![](http://image.slidesharecdn.com/l1-flowsandpseudo-121016053535-phpapp01/95/flow-charts-and-pseudo-code-4-638.jpg?cb=1350365785)
+![Pseudocode and flow charts](http://image.slidesharecdn.com/l1-flowsandpseudo-121016053535-phpapp01/95/flow-charts-and-pseudo-code-4-638.jpg?cb=1350365785)
 
 Cosas para recordar
 
@@ -32,9 +32,9 @@ Cosas para recordar
 * Todos los símbolos pueden tener más de una entrada a la misma línea.
 * Los símbolos tienen una salida única, salvo los símbolos de decisión, que dividen su flujo.
 
-## Visual Studio 
+## Visual Studio
 
-![](http://i.imgur.com/UprlL46.png)
+![VS](http://i.imgur.com/UprlL46.png)
 
 La sección azul es la sección donde podrás abrir proyectos, guardar todos los ficheros, compilar y ejecutar.
 Algunos comandos rápidos:
@@ -55,7 +55,7 @@ Adapta el IDE a tu gusto para trabajar más cómodamente.
 
 ## Tu primer proyecto en Visual Studio
 
-![](http://i.imgur.com/L70DwU9.gif)
+![Project](http://i.imgur.com/L70DwU9.gif)
 
 Cuando creas tu primer proyecto, es lo primero que encontrarás. Tenemos un proyecto de consola con el que vamos a empezar a jugar.
 
@@ -80,4 +80,3 @@ El Main no necesita ser renombrado ni modificarse en los parámetros que recibe 
 Y es en Main donde se escribirá el código que vamos a ejecutar en inicio.
 
 ¿Cómo empezar? Con tu amiga y vecina la Clase Console.
-

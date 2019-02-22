@@ -56,7 +56,7 @@ listaGeneral.Add(1);
 
 Hemos construido dos personajes, usando el constructor que toma los dos parámetros para nombre y nivel, para añadir dos elementos a la lista que usa la Clase Personaje como tipo de dato. También hemos añadido un número. La instancia ya es de contenido mixto, por lo que necesitaremos hacer comprobaciones para, en bucle, imprimir en consola todos los nombres de aquellos elementos que sean instancias de la Clase Persona.
 
-Y la Clase ArrayList, que tiene imbuida la funcionalidad de índices, nos permite acceder a los diferentes elementos a través de ellos. 
+Y la Clase ArrayList, que tiene imbuida la funcionalidad de índices, nos permite acceder a los diferentes elementos a través de ellos.
 
 ```cs
 for (int i = 0; i < listaGeneral.Count - 1; i++)

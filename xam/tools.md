@@ -17,5 +17,7 @@ Aquí se listan libros y también herramientas útiles para el desarrollo con Xa
 * [ADB is obsolete](https://stackoverflow.com/a/51549901/6659852)
 
 ---
-#### [Volver a inicio](../README.md)
-#### ← [Introducción Xamarin](intro.md)
+
+### [Volver a inicio](../README.md)
+
+### ← [Introducción Xamarin](intro.md)

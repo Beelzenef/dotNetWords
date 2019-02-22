@@ -1,14 +1,16 @@
 # Primera app
 
+## Un botón y un saludo
+
 Saludando al _user_ y haciendo una pregunta, con código en XAML y en C#. Cuando declars un control o _view_ en XAML, puedes acceder al mismo sin necesidad de "inicializarlo". Ya es detectado, considerado por el IDE para que puedas
 
 En XAML:
 
 ```xml
 <StackLayout>
-        <Label 
+        <Label
            x:Name="lbl_Answer"
-           Text="Welcome to Xamarin.Forms!" 
+           Text="Welcome to Xamarin.Forms!"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <Button Text="Press me!" Clicked="btnDisplay_Click"/>
@@ -26,5 +28,7 @@ En C#:
 ```
 
 ---
-#### [Volver a inicio](../README.md)
-#### ← [Introducción Xamarin](intro.md)
+
+### [Volver a inicio](../README.md)
+
+### ← [Introducción Xamarin](intro.md)

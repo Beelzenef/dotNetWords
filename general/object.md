@@ -12,7 +12,7 @@ Mientras que el primero tendría apenas unas pocas pertenencias, el último es p
 
 La Clase Object es la Clase madre, es LA CLASE. Todas las Clases creadas y que vayas a crear, heredarán de Object.
 
-### ¿Qué tiene la Clase Object?
+## En la Clase Object
 
 Unos pocos miembros que es importante conocer:
 

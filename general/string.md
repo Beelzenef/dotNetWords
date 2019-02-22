@@ -19,7 +19,7 @@ Propiedades
 
 * Length, que es la longitud de la cadena de texto en cuestión. Como cuenta el número de los caracteres, los espacios aunque sean al inicio y/o al final, también se cuentan.
 
-Métodos de la Clase String, algunos de ellos estáticos y otros no, la documentación dará la información que necesitas.	
+Métodos de la Clase String, algunos de ellos estáticos y otros no, la documentación dará la información que necesitas.
 
 * Compare(): Comparando dos strings por su contenido, sobrecargado.
 * CompareTo(): Compara la instancia actual con otra instancia. Sólo se pasa el string a comparar.

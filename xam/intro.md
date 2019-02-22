@@ -18,4 +18,5 @@ _100% API coverage_ para Android, iOS y por supuesto para Windows.
 * [Enlaces útiles](tools.md)
 
 ---
-#### [Volver a inicio](../README.md)
+
+### [Volver a inicio](../README.md)

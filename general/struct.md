@@ -22,8 +22,8 @@ struct Libro
 
   public Libro(string titulillo, int paginas)
   {
-  	nPaginasTotales = paginas;
-  	titulo = titulillo;
+      nPaginasTotales = paginas;
+      titulo = titulillo;
   }
 }
 ```

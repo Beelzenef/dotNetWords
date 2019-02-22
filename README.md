@@ -1,5 +1,6 @@
 # dotNetWords
-Curso de C# entre amigos
+
+Curso de C# y .NET
 
 ## Contenido
 
@@ -59,6 +60,6 @@ Curso de C# entre amigos
 * [Creando nuestra primera _app_](xam/first.md)
 * [Enlaces útiles](xam/tools.md)
 
-**Elena Guzman - BeelCode**
+## Elena Guzman - BeelCode
 
 ![Beelzenef creando](https://geekstorming.files.wordpress.com/2015/05/creando.png)

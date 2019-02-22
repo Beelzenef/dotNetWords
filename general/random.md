@@ -8,7 +8,7 @@ Los máximos que se especifican en los parámetros de cada método suelen estar 
 Si tienes la misma semilla, obtendras el mismo resultado.
 A pesar de lo pseudoaleatorio, se pueden usar para estadísticas reales. La semilla no es la generación, y es la filosofía de la aleatoriedad en cualquier lenguaje de programación.
 
-## Métodos:
+## Métodos
 
 * Next(): devuelve un entero aleatorio positivo
 * Next(X): devuelve un entero aleatorio positivo menor y no igual al número especificado como parámetro

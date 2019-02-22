@@ -53,7 +53,7 @@ enum GenerosFiccion {
 
 Este cambio tiene usos varios en los métodos de la Clase Enum, que veremos a continuación:
 
-### Métodos
+## Métodos
 
 Format()
 Convierte el valor especificado, el valor pasado como parámetro, en la cadena equivalente en el formato que se le pida.

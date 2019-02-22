@@ -17,9 +17,9 @@ Si lo que hemos escrito es un entero, es un “2”, será convertido sin proble
 Pero… ¿y si no es un entero? ¿Y si intentamos convertir a entero el string recibido que contiene “CSharp como mola se merece una ola”?
 Si lo intentas, sucederá que el programa fallará hasta el punto de que este se cierre y se te notificará que se ha lanzado una excepción no controlada (en cuyo caso, necesitarás detener el programa usando el botón STOP situado en el lugar donde debería aparecer el botón de RUN antes de ejecutar):
 
-![](http://i.stack.imgur.com/HLU2J.png)
+![getInt](http://i.stack.imgur.com/HLU2J.png)
 
-## ¿Qué es una excepción?
+## Excepciones
 
 Una excepción es un error que el programa no puede gestionar, elevandolo hasta… que alguien lo trate, lo controle. Como nadie lo ha controlado, el programa se cierra, peta, y notifica que no se ha podido convertir esa cadena a un entero.
 

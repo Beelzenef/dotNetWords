@@ -96,7 +96,7 @@ Mago.Descripcion();
 Esta línea de código te devuelve esa información de los magos, y estamos usando el nombre de la Clase en sí, no una instancia del mago, no un mago en concreto.
 ¿Son importantes? Sí. Los métodos y propiedades estáticos son poco recomendables en la programación contemporánea, pero serán importantes para iniciarnos en la primera Clase que vamos a conocer: CONSOLE.
 
-## ¿Puede haber más herencia?
+## Más herencia
 
 Podemos pensar que una Clase puede heredar de varias, pero en C# existe el concepto de Herencia Única. Este concepto determina que una Clase solo puede heredar de una única Clase... el resto son Interfaces.
 

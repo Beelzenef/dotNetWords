@@ -5,7 +5,7 @@ La documentación de Microsoft es muchas veces tu aliada, las descripciones y ex
 
 [Console (MSDN)](https://msdn.microsoft.com/es-es/library/system.console(v=vs.110).aspx)
 
-### Escribiendo en consola
+## Escribiendo en consola
 
 ¿Cómo lanzar un mensaje por pantalla? Invocando al método WriteLine().
 

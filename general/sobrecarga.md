@@ -2,7 +2,7 @@
 
 Cuando lees documentación de Clases, es posible que encontremos variantes sobre un determinado o varios métodos. ¿En qué sentido? Puede que exista método con un determinado nombre que en ocasiones reciba un entero… a veces recibe un entero además de una cadena de texto… ¿Cómo es posible esto?
 
-Este sistema se conoce como sobrecarga de métodos. 
+Este sistema se conoce como sobrecarga de métodos.
 Los métodos tienen una firma. La firma es la primera línea de un método, que consiste en su identificador (nombre), sus parámetros y el tipo de valor que devuelve. El resto del código consiste en su declaración, el algoritmo que resuelve, pero no en su firma.
 
 ¿En qué consiste entonces la sobrecarga de métodos? La sobrecarga de métodos es el uso de un método con un determinado nombre y un mismo tipo de valor a devolver pero con diferentes parámetros.

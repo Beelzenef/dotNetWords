@@ -12,6 +12,8 @@ WPF se basa en el modelo Modelo Vista Controlador, MVC, o como lo llama Microsof
 
 El interfaz gráfico se escribe en XML, o en un dialecto concreto llamado XAML, XML para aplicaciones. Cuando programamos, se tiene que coordinar el GUI con la lógica de negocios.
 
-### Buenas prácticas
+## Buenas prácticas
 
-### Colores
+* Sin contneido
+
+## Colores

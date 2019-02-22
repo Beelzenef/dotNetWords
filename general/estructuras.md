@@ -6,15 +6,15 @@ Bloques IF/ELSEIF/ELSE
 ```cs
 if (condición)
 {
-	sentencia1;
+    sentencia1;
 }
 else if (condicion)
 {
-	sentencia2;
+    sentencia2;
 }
 else
 {
-	sentencia3;
+    sentencia3;
 }
 ```
 
@@ -23,18 +23,18 @@ Bloque SWITCH
 ```cs
 switch (variable)
 {
-	case x:
-		sentencia1;
-		break;
-	case y:
-		sentencia2;
-		break;
-	case z:
-		sentencia3;
-		Break;
-	default:
-		sentencia4;
-		break;
+    case x:
+        sentencia1;
+        break;
+    case y:
+        sentencia2;
+        break;
+    case z:
+        ;
+        break;
+    default:
+        sentencia4;
+        break;
 }
 ```
 
@@ -61,7 +61,7 @@ Bucles WHILE
 ```cs
 while (condicion)
 {
-	sentencia;
+    sentencia;
 }
 ```
 
@@ -70,7 +70,7 @@ Bucles DOWHILE
 ```cs
 do
 {
-	sentencias;
+    sentencias;
 }
 while (condicion)
 ```

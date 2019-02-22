@@ -9,5 +9,7 @@ Crear un proyecto desde terminal...
 En la Clase de contexto es donde escribiremos el código que nos permitirá acceder a las tablas.
 
 ---
-#### [Volver a inicio](../README.md)
-#### ← [Inicio ASP.NET Core](intro.md)
+
+## [Volver a inicio](../README.md)
+
+## ← [Inicio ASP.NET Core](intro.md)

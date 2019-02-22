@@ -44,7 +44,6 @@ o
 
 `> ng serve -o`
 
-
 Cuando clonas un proyecto ya iniciado, en tu copia local necesitarás instalar la aplicación, así que una vez dentro del directorio de la misma, ejecuta:
 
 `> npm install`
@@ -63,7 +62,7 @@ Al momento de crear una aplicación con Angular, se te da a elegir el formato de
 
 En el proyecto creado, puedes encontrar módulos, como `src/app/app.module.ts`. Es la forma en la que se organiza la aplicación, de forma modular en unidades lógicas.
 
-![](https://pbs.twimg.com/media/CvGgsTAWAAIfvNA.jpg)
+![Modules](https://pbs.twimg.com/media/CvGgsTAWAAIfvNA.jpg)
 
 Algunas Clases se pueden importar, asigándoles nombre que podemos usar en nuestra aplicación.
 
@@ -121,7 +120,6 @@ Del decorador de la Clase podemos destacar:
 * `templateUrl` || `template`: ¿dónde se va a insertar la lógica que escribamos para este componente?
   * Puede ser en un `template`, donde se va a dar todo el código HTML que necesitemos. Puede ser tan sencillo como una línea `<h1>{{title}}</h1>`, o más complejo con múltiples líneas. En este último caso, usaremos _backticks_ para englobar ese código:
 
-
   ```html
     `<div>
         <h1>{{title}}</h1>
@@ -141,7 +139,6 @@ En el cuerpo de la Clase que tenemos, añadiremos variables, propiedades, funcio
 ### Componentes anidados
 
 Un componente anidado es un componente que se renderiza dentro de otro. Para lograrlo, picamos nuestro primer componente, el que estará anidado:
-
 
 ```ts
 import { Component } from '@angular/core';
@@ -173,8 +170,7 @@ export class FirstComponent { }
 
 Un componente solo se puede anidar si:
 
-* su _template_ solo maneja un fragmento de una 
-vista mayor.
+* su _template_ solo maneja un fragmento de una vista mayor.
 * tiene un selector
 * se comunica con su contenedor
 
@@ -349,7 +345,7 @@ Una vez añadido, podemos añadir a nuestro fichero HTML la sintaxis para _binde
 
 Podemos entonces resumir el tema de _data binding_ en la siguiente imagen:
 
-![](https://cdn-images-1.medium.com/max/1600/0*LNoIkhlqQBqvlDJk.)
+![Data binding](https://cdn-images-1.medium.com/max/1600/0*LNoIkhlqQBqvlDJk.)
 
 ## Mejorando la aplicación
 
@@ -428,8 +424,6 @@ Registrar servicios en Angular consiste en crear `Singletons`, es decir, instanc
 
 Las dependencias de servicios, y las inyecciones para los mismos, se especifican en los constructores de los componentes que los vayan a utilizar.
 
-
-
 Lo ideal es tener un directorio para los servicios que vayamos a crear en nuestro directorio de `app`, para organizar así nuestro código.
 
 Las Clases que usemos como servicio llevan una notación en el nombre como convención, como ejemplo:
@@ -486,7 +480,7 @@ Las _pipes_ son mecanismos para formatear datos, valores de variables, en nuestr
 Para nuestra clase Libro, queremos mostrar su fecha de publicación en nuestra . Las fechas son un buen ejemplo para mostrar el funcionamiento de las _pipes_, así que originalmente escribiríamos, para nuestra Clase:
 
 ```ts
-pubDate = new Date(1988, 3, 15); 
+pubDate = new Date(1988, 3, 15);
 ```
 
 Y en nuestro fichero HTML:
@@ -517,7 +511,7 @@ import { Pipe } from '@angular/core';
 
 @Pipe({ name: 'nombrePipe' })
 
-explort class nombrePipe implements PipeTransform { 
+explort class nombrePipe implements PipeTransform {
   // Implementación del código de la interfaz
   transform(value: string, character: string) : string {
     return;
@@ -534,11 +528,10 @@ import { NombrePipe } from './shared/nombre-pipe.pipe'
   declarations: [
     AppComponent,
     ...
-    NombrePipe 
+    NombrePipe
   ],
 ...
 ```
-
 
 [Sigue leyendo en Angular.io](https://angular.io/guide/pipes)
 
@@ -555,5 +548,7 @@ No existen _pipes_ de filtrado o de ordenación, y [en la documentación de Angu
 * [Angular + ASP.NET Core](https://medium.com/@levifuller/building-an-angular-application-with-asp-net-core-in-visual-studio-2017-visualized-f4b163830eaa)
 
 ---
+
 #### [Volver a inicio](../README.md)
+
 #### ← [Inicio ASP.NET Core](intro.md)

@@ -29,6 +29,7 @@ Construccion de la instancia a través de una cadena de texto, una variable de t
 ```cs
 StringBuilder strB_ = new StringBuilder("texto");
 ```
+
 Construccion de la instancia a través de una cadena de texto, una variable de tipo `string`, junto con la capacidad que tendrá:
 
 ```cs

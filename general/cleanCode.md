@@ -8,7 +8,7 @@ He aquí las lecciones más destacables y que podrían servir en el día a día 
 ## Sobre formato
 
 * En líneas verticales, lo ideal que los ficheros tengan entre 200 y 800 líneas.
-* Usa el formato que encontramos en el periódico: título simple y explicativo. 
+* Usa el formato que encontramos en el periódico: título simple y explicativo.
 * Información al inicio, ¿sabe el programador al leer si está en el módulo o Clase correcto?
 
 Lo ideal es organizar el código de esta forma:
@@ -33,15 +33,15 @@ Si se establecen reglas de equipo, necesitamos seguir esas reglas. La integridad
 
 El código evoluciona, crece, pero los comentarios no. Si necesitas comentar, puedes limpiar código. Explícate en código, no en los comentarios.
 
-#### ¿Comentas?
+Si comentas...
 
-![](https://media.giphy.com/media/FOft9pT2HNYsw/giphy.gif)
+![Shame on you!](https://media.giphy.com/media/FOft9pT2HNYsw/giphy.gif)
 
-Hay "escuelas" que defienden con firmeza que comentar el código es algo malo... mientras que otras optan por un punto medio. 
+Hay "escuelas" que defienden con firmeza que comentar el código es algo malo... mientras que otras optan por un punto medio.
 
 Para alcanzar ese punto medio, podemos diferenciar los buenos y malos comentarios.
 
-### Sobre buenos comentarios:
+### Sobre buenos comentarios
 
 * Legales, sobre las condiciones de uso.
 * Informativos (por ejemplo en métodos abstractos).
@@ -51,7 +51,7 @@ Para alcanzar ese punto medio, podemos diferenciar los buenos y malos comentario
 * Comentarios de TO-DO.
 * Ampliaciones posibles.
 
-### Sobre malos comentarios:
+### Sobre malos comentarios
 
 * Desvariar, volcar tus pensamientos sobre el código.
 * Comentarios redundantes (porque el código deber ser autoexplicativo).
@@ -91,7 +91,8 @@ Tenemos varios números mágicos a tener en cuenta:
 
 Sin efectos secundarios, sin acciones secundarias. La función *does one thing*. El nombre de la función podría incluso sugerir el orden de los parámetros.
 
-Si una función…
+Si una función...
+
 * soluciona algo, es un command.
 * responde a algo, es un query.
 
@@ -102,14 +103,14 @@ Es mejor lanzar excepciones que códigos de error.
 Extrae los bloques de manejo de errores en una función:
 
 ```cs
-try { 
-	action(); 
-} catch { 
-	errorHandling();
+try {
+    action();
+} catch {
+    errorHandling();
 }
 ```
 
-## Cuando tienes prisa...
+## Cuando tienes prisa
 
 Cosas que debes a tener en cuenta ante las emergencias o código urgente:
 
@@ -140,7 +141,7 @@ La tendencia suele ser de a más pequeño, más limpio. La probabilidad de que e
 
 > El único código que no falla es el que no existe - Eliseo Moreno
 
-Debe ser fácil de leer y fácil de cambiar. Cuida tu código. 
+Debe ser fácil de leer y fácil de cambiar. Cuida tu código.
 
 La simplicidad es tu objetivo, evita la duplicación. El código cumple con las expectativas, y sin dar sorpresas. Los giros argumentales inesperados se quedan en las novelas. El programador es responsable de que el código parezca hecho para el problema que intenta solucionar. Minimiza los bloques de código.
 
@@ -182,7 +183,7 @@ Orden de elementos:
 * Funciones privadas y otras lógicas.
 
 Pequeñas, con la responsabilidad adecuada, con cohesión.
- 
+
 A más cohesión, más pequeñas serán y mejor mantenimiento tendrán.
 
 ## Malos olores
