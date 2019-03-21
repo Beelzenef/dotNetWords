@@ -58,7 +58,10 @@ Curso de C# y .NET
 
 * [Introducción a Xamarin](xam/intro.md)
 * [Creando nuestra primera _app_](xam/first.md)
-* [Enlaces útiles](xam/tools.md)
+
+## Otras cosas
+
+* [Enlaces útiles](tools.md)
 
 ## Elena Guzman - BeelCode
 
