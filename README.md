@@ -51,7 +51,6 @@ Curso de C# y .NET
 * [Conceptos básicos](anc/basic.md)
 * [_Razor pages_](anc/razor.md)
 * [Bases de datos](anc/bd.md)
-* [Bases de datos](anc/angular.md)
 * [Angular](anc/angular.md)
 
 ### Xamarin
