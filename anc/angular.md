@@ -136,6 +136,8 @@ También podemos añadir:
 
 En el cuerpo de la Clase que tenemos, añadiremos variables, propiedades, funciones... todo lo que necesitemos para nuestra aplicación.
 
+Todos los componentes tienen un selector, una etiqueta en un fichero HTML en la cual se van a inyectar. El primer componente de nuestra aplicación, por defecto es `<app-root>`. La aplicación que se genera por defecto en Angular, 'Tour of Heros', incluye más código además del selector de este componente. Podemos eliminarlo y dejar únicamente el selector, para comenzar la aventura en Angular.
+
 ### Componentes anidados
 
 Un componente anidado es un componente que se renderiza dentro de otro. Para lograrlo, picamos nuestro primer componente, el que estará anidado:
@@ -365,6 +367,14 @@ Podemos entonces resumir el tema de _data binding_ en la siguiente imagen:
 
 Es el modo para viajar entre páginas web para hacer de nuestra aplicación un sitio interactivo y dinámico. Para enrutar, necesitaremos seguir unos cuantos pasos, empezando por crear componentes a los que viajaremos. La estructura básica de un componente es de tres ficheros: HTML, CSS y TypeScript. Todo esto podemos organizarlo en la estructura de directorios por componentes, y así localizar fácilmente nuestro código.
 
+El _routing_ se basa en componentes, pues identificamos los componentes como _targets_ u objetivos del enrutamiento.
+
+Para hacer _routing_, necesitaremos añadir `RouterModule` al _array_ de importaciones de nuestro módulo.
+
+```ts
+import { Routes, RouterModule } from '@angular/router';
+```
+
 Para un _Component_ llamado _Start_ escribiríamos en nuestro fichero Typescript:
 
 ```ts
@@ -374,13 +384,11 @@ import { Component } from '@angular/core';
 export class OneComponent { }
 ```
 
-Crearíamos esta estructura para cada componente que vayamos a añadir en nuestra aplicación, y ahora es momento de viajar hacia `app.module.ts`.  Allí vamos a importar algunos módulos, para comenzar el enrutamiento.
+Una vez hayamos creado la estructura de navegación (hacia dónde y desde dónde navegamos), es el momento de crear el mapa de navegación. Crearemos un array de `routes` o rutas, con el que redireccionaremos a diferentes componentes dependiendo de la URL que especifiquemos en nuestro navegador.
 
-```ts
-import { Routes, RouterModule } from '@angular/router';
-```
+El orden en el que especifiquemos estas rutas a las que navegar importa, pues se busca la primera coincidencia en la que encaje nuestra ruta para navegar a ella.
 
-Crearemos un array de `Routes`, con el que redireccionaremos a diferentes componentes dependiendo de la URL que especifiquemos en nuestro navegador. Para ello, debemos importar también los componentes que vyaamos a usar.
+Una vez listo, volvemos al módulo que estamos editando, importando también los componentes que vayamos a usar.
 
 ```ts
 // Importamos los componentes que vayamos a usar
@@ -414,7 +422,54 @@ const routes : Routes = [
 export class AppModule { }
 ```
 
-Por último, modificaremos nuestro fichero `index.html` para eliminar todo el código que se haya generado automáticamente para dejar únicamente las _tags_ `<app-root>`. Después añadiremos código sobre ese fichero para complementar nuestra aplicación junto con los componentes que se irán situando sobre esa _tag_.
+También podemos especificarlo como:
+
+```ts
+RouterModule.forRoot([
+    { path: "", component: StartComponent },
+    { path: "story", component: StoryComponent },
+    { path: "character/:id", component: CharacterComponent },
+    { path: "**", redirectTo: "" }
+], { useHash: true });
+```
+
+La sección de useHash es opcional, si se especifica es para asignarlo a `true`, su valor es `false` por defecto. La parte de la URL que vaya detrás del `#` es ignorada, nunca se envía al servidor, y sirve para localizar secciones de la página web, como marcadores o _headers_ de secciones a destacar de la página.
+
+Solo nos falta implementar la parte de UI, ¿cómo hacemos que un elemento, como un botón, redireccione a un componente?
+
+Editaremos el elemento HTML que se encuentre en el componente y contendrá el siguiente código:
+
+```html
+<a [routerLink]="['/story']">
+  <button>
+    Take me to the story!
+  </button>
+</a>
+```
+
+¿Dónde se van a mostrar los componentes a los que routeamos? La etiqueta `<router-outlet></router-outlet>`, sitúa el componente invocado en su lugar.
+
+### En resumen, proceso de _routing_
+
+* Se activa el link de router en la UI
+* Se actualiza la URL en el _browser_
+* Se busca el primer _match_ en el mapa de _routes_ que hemos creado en el módulo
+* Se instancia el componente asociado a esa ruta
+* Se inyecta el componente en el `<router-outlet>`
+
+### La elección: _routing_ o _nesting_
+
+Características de _nesting_:
+
+* Necesita de un selector
+* Aninado dentro de otro componente
+* No necesita _routing_
+
+Características de _routing_:
+
+* No necesita de un selector
+* Se navega con rutas
+* Asociadas a una acción
 
 ## Creando un servicio
 

@@ -38,7 +38,6 @@ Curso de C# y .NET
 ### Para interfaces gráficas
 
 * [Introducción a WPF](WPF/introWPF.md)
-* Aplicaciones web
 * [Controles generales](/WPF/controlesGenerales.md)
 * [Controles específicos](WPF/controlesEspecificos.md)
 * [Contenedores](WPF/contenedores.md)
