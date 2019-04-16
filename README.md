@@ -46,11 +46,11 @@ Curso de C# y .NET
 
 ### Para aplicaciones web
 
-* [Introducción a ASP NET Core](anc/intro.md)
+* [Introducción a ASP.NET Core](anc/intro.md)
 * [Conceptos básicos](anc/basic.md)
 * [_Razor pages_](anc/razor.md)
 * [Bases de datos](anc/bd.md)
-* [Angular](anc/angular.md)
+* [Angular](anc/angular/angular.md)
 
 ### Xamarin
 
