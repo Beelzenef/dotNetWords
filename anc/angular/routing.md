@@ -107,3 +107,37 @@ Características de _routing_:
 * No necesita de un selector
 * Se navega con rutas
 * Asociadas a una acción
+
+## Rutas con parámetros
+
+Es posible que en tu mapa de _routes_ exista una con parámetros, quizás para navegar a un elemento concreto, para visualizar al detalle sus datos. ¿Cómo accedemos a ese elemento desde la aplicación?
+
+La declaración de una _route_ con parámetro se determina de la siguiente forma:
+
+```ts
+...
+{ path: "character/:id", component: CharacterComponent }
+...
+```
+
+Y para determinar qué elemento HTML será el encargado de redirigirnos al componente en cuestión:
+
+```html
+<a [routerLink="['/character', character.id]">
+  {{ character.name }}
+</a>
+```
+
+Ahora solo nos queda obtener su id desde la ruta, en la vista donde vamos a detallar toda la instancia.
+
+```ts
+import { ActivatedRoute } from '@angular/router';
+
+constructor (private route: ActivatedRoute) {
+  let id = +this.route.snapshot.paramMap.get('id');
+}
+```
+
+Usamos `let` para definir el `scope` privado de la variable, y el operador `+this` para convertir el `string` que es el ID a la hora de recogerlo de la URL en un número con el que buscaremos los datos de la fuente de datos que estemos utilizando.
+
+Podemos usar ActivatedRoute, si solamente consultamos una vez por este id en la ruta, u Observables, si consultamos numerosas veces con relativa frecuencia, como ocurriría si paginásemos entre los `character`s, con botones de `Next` o `Previous`.

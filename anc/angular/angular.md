@@ -61,9 +61,9 @@ Al momento de crear una aplicación con Angular, se te da a elegir el formato de
 ## Sigue leyendo
 
 * [Módulos y componentes](components.md)
-* [Databinds directivas y más](databinds.md)
+* [_Databinds_ directivas y más](databinds.md)
 * [Servicios y _pipes_](services.md)
-* [Routing y navegación por la aplicación](routing.md)
+* [_Routing_ y navegación por la aplicación](routing.md)
 * [Mejorando la aplicación](hooks.md)
 
 ### Enlaces útiles
