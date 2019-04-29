@@ -56,8 +56,8 @@ Para alcanzar ese punto medio, podemos diferenciar los buenos y malos comentario
 * Desvariar, volcar tus pensamientos sobre el código.
 * Comentarios redundantes (porque el código deber ser autoexplicativo).
 * Comentarios ruidosos, que manchen con exceso de líneas.
-* Comentarios de informadores,
-* Diarios en comentarios, para cada modificación realizada,
+* Comentarios de colaboraciones, ¿te imaginas tener un comentario sobre cada persona que modifica un método o línea de código?
+* Diarios en comentarios, para cada modificación realizada, para eso existe el control de versiones.
 * No usar *query-function*.
 * Donde puedes usar una función o una variable, no uses un comentario.
 * Marcadores de posición (propiedades, funciones…) El código se (o al menos debería) autodescribe.

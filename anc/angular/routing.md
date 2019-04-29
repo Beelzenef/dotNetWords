@@ -133,6 +133,8 @@ Ahora solo nos queda obtener su id desde la ruta, en la vista donde vamos a deta
 ```ts
 import { ActivatedRoute } from '@angular/router';
 
+// Declaración de clase
+
 constructor (private route: ActivatedRoute) {
   let id = +this.route.snapshot.paramMap.get('id');
 }
@@ -141,3 +143,74 @@ constructor (private route: ActivatedRoute) {
 Usamos `let` para definir el `scope` privado de la variable, y el operador `+this` para convertir el `string` que es el ID a la hora de recogerlo de la URL en un número con el que buscaremos los datos de la fuente de datos que estemos utilizando.
 
 Podemos usar ActivatedRoute, si solamente consultamos una vez por este id en la ruta, u Observables, si consultamos numerosas veces con relativa frecuencia, como ocurriría si paginásemos entre los `character`s, con botones de `Next` o `Previous`.
+
+## Añadiendo un _back button_
+
+Para navegar hacia páginas anteriores, añadiremos un botón al componente sobre el que estamos trabajando. Operaremos sobre un evento llamado `onBack()`, al que llamaremos para activar la navegación inversa.
+
+```ts
+import { Router } from '@angular/router';
+
+// Declaración de clase
+
+constructor (private router: Route) { }
+
+onBack(): void {
+  this.router.navigate(['/rutaParaRetroceder']);
+}
+```
+
+Y en HTML, con nuestro botón, la única diferencia será:
+
+```html
+<button (click)='onBack()'>
+  Go back!
+</button>
+```
+
+## _Guards_
+
+Limitando el acceso a rutas, creando criterios de seguridad.
+
+Existen los siguientes tipos de `Guards`:
+
+* CanActivate
+* CanActivateChild
+* CanDeactivate
+* CanLoad
+* Resolve
+
+Necesitaremos crear una Clase que implemente esta `Guard`. Añadirá un método que puede devolver un `boolean` según el caso, permitiendo o no el acceso a esa ruta.
+
+Creando la `Guard`:
+
+```ts
+import { CanActivate } from '@angular/router';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class SomeComponentGuard  implements CanActivate {
+  constructor (private router: Route) { }
+
+  canActivate(): boolean {
+    //
+  }
+}
+```
+
+¿Cómo se implementa? Volveremos a las rutas que hemos declarado en nuestra aplicación para limitar el acceso a aquella que necesitemos
+
+```ts
+RouterModule.forRoot([
+    // Primeras rutas
+    { path: "story", component: StoryComponent },
+    { path:
+      "character/:id",
+      canActivate: [SomeComponentGuard]
+      component: CharacterComponent },
+    // Otras rutas
+], { useHash: true });
+```
