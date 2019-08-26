@@ -10,6 +10,8 @@ Crear un proyecto desde terminal...
 
 En la Clase de contexto es donde escribiremos el código que nos permitirá acceder a las tablas.
 
+[EF Core + Sqlite](https://docs.microsoft.com/en-gb/ef/core/get-started/netcore/new-db-sqlite)
+
 # Más que leer
 
 [Code first migrations in team environements](https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/teams). Si vas a leer esto, prepárate un café porque es largo (recomendación de Microsoft).
