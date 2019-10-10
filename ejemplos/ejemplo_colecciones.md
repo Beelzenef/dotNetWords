@@ -1,5 +1,6 @@
-// Listas
+# Ejemplos de colecciones
 
+```cs
 List<int> listaNumeros = new List<int>();
 
 listaNumeros.Add(1);
@@ -38,3 +39,4 @@ Dictionary<int, Libro> listaLibros = new Dictionary<int, Libro>();
 
 listaLibros.Add(1, new Libro("Eragon", "Paolini"));
 listaLibros.Add(2, new Libro("Fundacion", "Asimov"));
+```

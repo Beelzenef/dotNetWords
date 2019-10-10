@@ -49,7 +49,7 @@ Con esta Clase heredada, podemos crear nuestros ViewModels que devuelvan datos y
             set { SetProperty(ref _title, value); }
         }
 
-        // more properties and code!        
+        // more properties and code!
     }
 ```
 
@@ -63,4 +63,4 @@ Haciendo `binding` a la propiedad, estaremos al tanto del valor inicial y de tod
 
 ---
 
-### [Volver a inicio](../README.md)
+## [Volver a inicio](../README.md)

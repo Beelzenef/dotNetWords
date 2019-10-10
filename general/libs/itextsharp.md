@@ -27,7 +27,7 @@ public Stream GeneratePdf(Stream imageStream)
         Phrase phrase = new Phrase();
         Chunk chunk = new Chunk("some text", someFont);
         phrase.Add(chunk);
-         
+
         paragraph.Add(phrase);
 
         doc.Add(paragraph);
