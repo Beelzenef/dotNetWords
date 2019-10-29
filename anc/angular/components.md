@@ -118,6 +118,8 @@ Un componente solo se puede anidar si:
 * tiene un selector
 * se comunica con su contenedor
 
+### Comunicación entre componentes anidados: `Input` y `Output`
+
 Para comunicar dos componentes que forman una estructura contenedor-anidado, usamos el decorador `@Input`, con el que podremos recibir en un componente datos de su contenedor.
 
 Para utilizar este decorador, modifica una propiedad en el componente anidado para especificar:

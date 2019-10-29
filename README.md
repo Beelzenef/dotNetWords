@@ -34,6 +34,7 @@ Curso de C# y .NET
 * OOP
 * [LINQ](general/linq.md)
 * [MVVM](general/mvvm.md)
+* [Entity Framework Core](general/ef.md)
 
 ### Para interfaces gráficas
 
@@ -49,13 +50,14 @@ Curso de C# y .NET
 * [Introducción a ASP.NET Core](anc/intro.md)
 * [Conceptos básicos](anc/basic.md)
 * [_Razor pages_](anc/razor.md)
-* [Bases de datos](anc/bd.md)
 * [Angular](anc/angular/angular.md)
 
 ### Xamarin
 
 * [Introducción a Xamarin](xam/intro.md)
 * [Creando nuestra primera _app_](xam/first.md)
+* [Control: `ListView`](xam/listview.md)
+* [MVVM en Xamarin](xam/vm.md)
 
 ## Otras cosas
 

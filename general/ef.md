@@ -188,6 +188,23 @@ Declaración de dos entidades, en una relación OneToMany:
         .HasForeignKey<int>(rb => rb.AuthorId);
 ```
 
+```cs
+ 
+
+    var studs = _context.Classrooms
+                    .Include(c => c.Students)
+                    .ToList();
+
+    class Classroom
+    {
+        public int Id { get; set; }
+        public int Capacity { get; set; }
+
+        public ICollection<Studs> Studs { get; set; }
+    }
+
+```
+
 Para definir que una entidad tiene IDs autoincrementales, utilizaremos el descriptor de propiedades:
 
 ```cs
