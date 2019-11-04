@@ -120,12 +120,22 @@ Un componente solo se puede anidar si:
 
 ### Comunicación entre componentes anidados: `Input` y `Output`
 
-Para comunicar dos componentes que forman una estructura contenedor-anidado, usamos el decorador `@Input`, con el que podremos recibir en un componente datos de su contenedor.
+Para comunicar dos componentes que forman una estructura contenedor-anidado, usamos decoradores para marcar esa comunicación.
+
+#### `Inputs`
+
+Empezamos con el decorador `@Input`, con el que podremos recibir en un componente datos de su contenedor.
 
 Para utilizar este decorador, modifica una propiedad en el componente anidado para especificar:
 
 ```ts
 @Input() propiedadComunicada: string;
+```
+
+Para usar este decorador necesitarás importar las siguientes partes:
+
+```ts
+import { Component, Input } from '@angular/core';
 ```
 
 Y en el contenedor haremos referencia a esta propiedad que acabamos de modificar, desde el mismo punto donde añadimos el selector del componente anidado:
@@ -150,5 +160,35 @@ export class NestedComponent implements OnChanges {
     // código a ejecutar cuando
     // se perciben cambios
   }
+}
+```
+
+#### `Output`
+
+El proceso contrario, pasar un valor desde componente detalle al componente maestro, es conocido como `Output`. Necesitaremos algunos `imports` específicos
+
+```ts
+import { Component, EventEmitter, Output } from '@angular/core';
+```
+
+Declaramos la propiedad que va a "emitir" un valor hacia el componente maestro, especificando un tipo de datos:
+
+```ts
+@Output() emitValue: EventEmitter<number> = new EventEmitter<number>();
+```
+
+En el componente detalle, tendremos un elemento que disparará la emisión del valor al componente maestro, como puede ser un botón.
+
+```html
+<button (click)="emit($event)">
+  Click me!
+</button>
+```
+
+Este botón invoca a un método que a su vez invoca a la emisión del evento:
+
+```ts
+emit(event) {
+  emitValue(event);
 }
 ```
