@@ -1,6 +1,8 @@
 # dotNetWords
 
-Curso de C# y .NET
+Concimientos de C# y .NET
+
+Para seguir aprendiendo: [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
 
 ## Contenido
 
