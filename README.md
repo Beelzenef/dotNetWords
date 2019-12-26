@@ -2,7 +2,10 @@
 
 Concimientos de C# y .NET
 
-Para seguir aprendiendo: [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
+Para seguir aprendiendo: 
+
+* [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
+* [Design guidelines: general naming conventions](https://docs.microsoft.com/en-gb/dotnet/standard/design-guidelines/general-naming-conventions)
 
 ## Contenido
 
