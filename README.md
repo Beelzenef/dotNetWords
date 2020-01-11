@@ -6,6 +6,7 @@ Para seguir aprendiendo:
 
 * [ASP.NET Core Developer Roadmap](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap)
 * [Design guidelines: general naming conventions](https://docs.microsoft.com/en-gb/dotnet/standard/design-guidelines/general-naming-conventions)
+* [Microsoft Learn, search all paths!](https://docs.microsoft.com/en-us/learn/browse/)
 
 ## Contenido
 
