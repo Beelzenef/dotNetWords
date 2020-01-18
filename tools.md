@@ -1,6 +1,10 @@
 # Enlaces útiles
 
-Aquí se listan libros y también herramientas útiles para el desarrollo con Xamarin:
+Aquí se listan libros y también herramientas útiles para el desarrollo .NET:
+
+## Artículos interesantes
+
+* [Clean Architecture en .NET Core](https://dev.to/jeastham1993/clean-architecture-in-net-core-56gh)
 
 ## Libros
 
