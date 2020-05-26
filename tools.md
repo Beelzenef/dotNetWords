@@ -5,6 +5,7 @@ Aquí se listan libros y también herramientas útiles para el desarrollo .NET:
 ## Artículos interesantes
 
 * [Clean Architecture en .NET Core](https://dev.to/jeastham1993/clean-architecture-in-net-core-56gh)
+* [Welcome to C# 9.0](https://devblogs.microsoft.com/dotnet/welcome-to-c-9-0/)
 
 ## Libros
 
