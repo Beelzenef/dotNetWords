@@ -52,6 +52,10 @@ En la Clase `Startup`, para declarar un servicio, será en C#:
 services.AddScoped<IServicio, ClaseServicio>();
 ```
 
+## Enlaces de interés
+
+* [Build a Web API using GraphQL .NET Core and Entity Framework](https://dev.to/dotnet/how-you-can-build-a-web-api-using-graphql-net-core-and-entity-framework-1ago)
+
 ---
 
 ## [Volver a inicio](../README.md)
