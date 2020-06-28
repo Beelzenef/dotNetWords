@@ -15,7 +15,7 @@ El contenido dentro del fichero es la información que vamos a gestionar gracias
 
 ### Qué es HTML
 
-HTML (lenguaje de marcado de hipertexto) que contiene la inform y gestiona las páginas web. Es el fundamento de la WWW, lenguaje que se viralizó los contenidos en la red.
+HTML (lenguaje de marcado de hipertexto) que contiene la información y gestiona las páginas web. Es el fundamento de la WWW, lenguaje que viralizó los contenidos en la red.
 
 Como lenguaje, tiene sintaxis y reglas. Es una variedad de lenguajes amplio y flexible, permitiendo gran capacidad apra compartir información, es un estándar al que todo el mundo puede acceder.
 
