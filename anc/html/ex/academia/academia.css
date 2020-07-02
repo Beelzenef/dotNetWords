@@ -1,0 +1,103 @@
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .column {
+    float: left;
+    padding: 5px 5px 10px 5px;
+    height: 300px;
+    position: relative;
+    min-height: 100px;;
+}
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    width: 20%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+  }
+
+  .caps {
+      text-transform: uppercase;
+  }
+
+  .nobullet {
+      list-style-type: none;
+  }
+
+  .teacherstable {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .teacherstable th {
+      text-align: left;
+      background-color: #333;
+      color: white;
+  }

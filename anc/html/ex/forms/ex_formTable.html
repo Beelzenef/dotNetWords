@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de datos</title>
+</head>
+
+<body>
+
+    <h2>Formulario CodeHouse Academy</h2>
+
+    <form>
+
+        <table style="width: 50%;">
+
+            <tr>
+                <td>
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="fname" name="fname">
+                </td>
+                <td>
+                    <label for="fname">Apellidos:</label>
+                    <input type="text" id="fname" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Meses programando</label>
+                    <input type="number" id="age" name="age" />
+                </td>
+                <td>
+                    <label for="age">Fecha de nacimiento:</label>
+                    <input type="date" id="age" name="age" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="role">Rol que me gustaría desempeñar</label><br/>
+                    <input type="radio" id="backend" name="role" value="backend">
+                    <label for="male">Backend</label><br>
+                    <input type="radio" id="frontend" name="role" value="frontend">
+                    <label for="female">Frontend</label><br>
+
+                    
+                    <input type="radio" />
+                    <label for="other">Fullstack</label>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="frameworks">Framework favorito:</label>
+                    <select id="frameworks" name="frameworks">
+                        <option value="angular">Angular</option>
+                        <option value="vue">Vue</option>
+                        <option value="react">React</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">¿Te gustaría recibir información adicional?</label>
+                    <input type="checkbox" name="info" id="info"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" value="send">Enviar info</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+</body>
+
+</html>

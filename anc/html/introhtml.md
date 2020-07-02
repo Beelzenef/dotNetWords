@@ -190,6 +190,15 @@ Estos enlaces se abrirán en la misma pestaña en la que estamos, por lo que si 
 
 ### Secciones especiales
 
+Hay una serie de secciones especiales que tienen asignado un significado semántico predeterminado:ç
+
+* `<header>`: una cabecera o sección de presentación de un bloque
+* `<main>`: indica la principal sección de contenido
+* `<footer>`: un pie o sección final de un bloque
+* `<nav>`: un bloque de navegación, para un menú.
+* `<aside>`: un bloque de contenido de menor importancia o con contenido relacionado
+* `<article>`: un artículo, el cual aunque elimináramos el resto de contenido seguiría teniendo sentido por si mismo.
+
 ```html
 <header></header>
 ```

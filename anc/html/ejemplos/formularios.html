@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+
+        <!-- Input para nombre de pila-->
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" id="nombre" type="text" placeholder="Dime tu nombre" /><br /><br />
+
+        <!-- Input para fecha de nacimiento-->
+        <label for="birthdate">Fecha de nacimiento</label>
+        <input id="birthdate" name="birthdate" type="date" /><br /><br />
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age"/><br /><br />
+
+        <label>DNI:</label>
+        <input type="file" /><br /><br />
+
+        <label>Foto:</label>
+        <!-- No tiene el funcionamiento esperado
+            <input type="image" />
+        -->
+        <br/><br/>
+
+        <label>Contraseña:</label>
+        <input type="password" /><br /><br />
+
+        
+        <label>Recibir info adicional:</label>
+        <input type="checkbox" /><br /><br />
+
+        <!-- Radio buttons-->
+
+        <label for="genero">Genero de ficción favorito:</label><br />
+
+        <!-- Primera opción-->
+        <input type="radio" id="cienciaficcion" value="cienciaficcion" name="genero"/>
+        <label>Ciencia ficción</label><br />
+        <input type="radio" id="fantasia" value="fantasia" name="genero"/>
+        <label>Fantasía</label><br />
+        <input type="radio" id="terror" value="terror" name="genero"/>
+        <label>Terror</label>
+
+        <br />
+        <br />
+        <input type="color">
+
+        <br />
+
+        <label for="genero2">Selecciona otra vez tu género favorito:</label>
+        <select id="generos" name="genero2">
+            <option value="cifi">Ciencia ficción</option>
+            <option value="fantasy">Fantasía</option>
+            <option value="horror">Terror</option>
+        </select>
+
+        <br />
+        <br />
+
+        <input type="week"/>
+
+        <input type="" min="0" max="6" />
+
+
+        <input type="submit" value="Enviar info"/>
+
+    </form>
+
+</body>
+
+</html>
