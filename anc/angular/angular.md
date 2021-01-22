@@ -58,6 +58,46 @@ Al momento de crear una aplicación con Angular, se te da a elegir el formato de
 * LESS
 * Stylus
 
+## Definición de pipeline
+
+Exclusivo de Azure DevOps:
+
+```yaml
+pool:
+  name: Azure Pipelines
+  demands: npm
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm install cli'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'install @angular/cli'
+
+- task: Npm@1
+  displayName: 'npm build'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run ng build'
+
+- task: Npm@1
+  displayName: 'npm tests'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'run test-headless'
+
+```
+
+_feel free to use!_
+
 ## Sigue leyendo
 
 * [Módulos y componentes](components.md)
